@@ -1,151 +1,241 @@
 [
   {
     "id": 1,
-    "slug": "e-commerce-platform",
-    "title": "E-commerce Platform",
-    "description": "A full-stack e-commerce solution with payment integration and admin dashboard. This project features a modern UI, responsive design, and seamless checkout experience. Users can browse products, add items to cart, and complete purchases using Stripe integration.",
-    "longDescription": "This e-commerce platform was built to provide small businesses with an affordable yet powerful online store solution. The project includes inventory management, order processing, customer accounts, and detailed analytics for store owners.\n\nThe admin dashboard gives store owners complete control over their products, orders, and customer data. The frontend is optimized for mobile devices and provides a smooth shopping experience across all devices.",
-    "mainImage": "/placeholder.svg?height=600&width=800",
-    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "MongoDB", "Redux"],
-    "demoUrl": "https://demo-ecommerce.example.com",
-    "githubUrl": "https://github.com/filszu/ecommerce-platform",
+    "slug": "partyvote-radio-elektron",
+    "title": "PartyVote - Radio Elektron",
+    "description": "Interactive web app that allows users to vote for their favorite songs and influence what plays on Radio Elektron.",
+    "longDescription": "PartyVote is an interactive web application that allows users to vote for their favorite songs and influence what plays on Radio Elektron. The app creates an engaging experience for radio listeners and event attendees by giving them control over the music playlist.\n\nThe application features real-time voting, playlist management, and integration with popular music services like Spotify and YouTube Music. It includes an admin panel for hosts to manage songs, configure party settings, and access developer tools. The platform also offers premium features through Stripe payment integration.",
+    "mainImage": "/images/partyvote-main.png",
+    "tags": ["Next.js", "Supabase", "TypeScript", "Google Cloud Platform", "Stripe", "Spotify API", "PostgreSQL"],
+    "demoUrl": "https://partyvote.ciac.me",
+    "githubUrl": "https://github.com/filszu/partyvote",
     "featured": true,
     "screenshots": [
       {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "Product listing page with filtering options"
+        "image": "/images/partyvote-voting.png",
+        "description": "Music Voting Page - Users can upvote or downvote songs in real-time"
       },
       {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "Shopping cart with dynamic updates"
+        "image": "/images/partyvote-add-song.png",
+        "description": "Add Song Feature - Users can add songs from Spotify or YouTube Music"
       },
       {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "Admin dashboard with sales analytics"
+        "image": "/images/partyvote-share.png",
+        "description": "Share Party Feature - Generate QR codes and links to share with friends"
       },
       {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "Mobile responsive checkout process"
+        "image": "/images/partyvote-admin-songs.png",
+        "description": "Admin Panel - Manage songs with editing capabilities"
+      },
+      {
+        "image": "/images/partyvote-admin-settings.png",
+        "description": "Admin Panel - Configure party settings and preferences"
+      },
+      {
+        "image": "/images/partyvote-developer.png",
+        "description": "Developer Tools - API access for integration with other services"
+      },
+      {
+        "image": "/images/partyvote-pricing.png",
+        "description": "Subscription Plans - Free and premium options with Stripe integration"
       }
     ]
   },
   {
     "id": 2,
-    "slug": "ai-content-generator",
-    "title": "AI Content Generator",
-    "description": "Web app that generates content using AI models with customizable parameters.",
-    "longDescription": "This AI-powered content generation tool helps content creators, marketers, and writers overcome creative blocks and streamline their workflow. The application leverages state-of-the-art language models to generate high-quality content based on user prompts and parameters.\n\nUsers can customize the tone, style, and length of the generated content, making it suitable for various purposes such as blog posts, social media updates, product descriptions, and more. The application also includes a content history feature that allows users to save and organize their generated content.",
-    "mainImage": "/placeholder.svg?height=600&width=800",
-    "tags": ["React", "Node.js", "OpenAI API", "MongoDB", "Express", "JWT Authentication"],
-    "demoUrl": "https://ai-content-gen.example.com",
-    "githubUrl": "https://github.com/filszu/ai-content-generator",
+    "slug": "osir-bunkier",
+    "title": "OSIR Bunkier",
+    "description": "Commercial website for a military-themed recreation center offering survival camps, paintball, and team-building activities.",
+    "longDescription": "OSIR Bunkier is a commercial project for a military-themed recreation center located in Świdnica, Poland. The website showcases their various offerings including survival camps for children, paintball activities, and venues for birthday parties and corporate events.\n\nThe site features a modern, responsive design with a military aesthetic that matches the brand's identity. Key sections include information about their activities, testimonials from satisfied customers, and contact details for booking events.\n\nAs the developer, I implemented the entire frontend using Next.js and TypeScript, ensuring a smooth user experience across all devices while maintaining the distinctive visual style that represents the OSIR Bunkier brand.",
+    "mainImage": "/images/osir-bunkier-hero.png",
+    "tags": ["Next.js", "TypeScript", "CSS3", "Responsive Design", "Commercial Project"],
+    "demoUrl": "https://www.bunkier.zgora.pl/",
+    "githubUrl": "https://github.com/filszu/bunkier-website",
     "featured": true,
     "screenshots": [
       {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "Content generation interface with parameters"
+        "image": "/images/osir-bunkier-hero.png",
+        "description": "Hero section showcasing the military adventure theme"
       },
       {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "History of generated content with search functionality"
+        "image": "/images/osir-bunkier-offerings.png",
+        "description": "Key offerings including day camps, military adventures, and event hosting"
       },
       {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "User dashboard showing usage statistics"
+        "image": "/images/osir-bunkier-activities.png",
+        "description": "Activity highlights including water adventures and shooting lessons"
       },
       {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "Mobile view of the content editor"
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "slug": "task-management-app",
-    "title": "Task Management App",
-    "description": "Collaborative task management tool with real-time updates and notifications.",
-    "longDescription": "This task management application was designed to help teams collaborate effectively on projects. With real-time updates powered by Firebase, team members can see changes as they happen without needing to refresh the page.\n\nThe app includes features such as task assignment, due dates, priority levels, comments, file attachments, and progress tracking. Users receive notifications for task assignments, approaching deadlines, and mentions in comments.",
-    "mainImage": "/placeholder.svg?height=600&width=800",
-    "tags": ["React", "Firebase", "Tailwind CSS", "React DnD", "PWA"],
-    "demoUrl": "https://task-app.example.com",
-    "githubUrl": "https://github.com/filszu/task-management",
-    "featured": false,
-    "screenshots": [
-      {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "Kanban board view with drag-and-drop functionality"
-      },
-      {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "Task detail view with comments and activity log"
-      },
-      {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "Team dashboard showing member activities"
-      },
-      {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "Calendar view of upcoming tasks and deadlines"
+        "image": "/images/osir-bunkier-contact.png",
+        "description": "Contact section with location map and details"
       }
     ]
   },
   {
     "id": 4,
-    "slug": "portfolio-website",
-    "title": "Portfolio Website",
-    "description": "Interactive portfolio website with animations and 3D elements.",
-    "longDescription": "This portfolio website showcases my work and skills through an interactive and visually engaging experience. The design emphasizes creativity and technical proficiency while maintaining excellent performance and accessibility.\n\nThe site features smooth animations, 3D elements, and interactive components that respond to user actions. The project section includes detailed case studies of my work, and the contact form makes it easy for potential clients or employers to reach out.",
-    "mainImage": "/placeholder.svg?height=600&width=800",
-    "tags": ["Next.js", "Three.js", "GSAP", "Tailwind CSS", "Framer Motion"],
-    "demoUrl": "https://portfolio.example.com",
-    "githubUrl": "https://github.com/filszu/portfolio",
+    "slug": "kaizen-steps",
+    "title": "Kaizen Steps",
+    "description": "Beautiful designed habit-tracking and self-improvement platform to help users develop positive habits through incremental progress.",
+    "longDescription": "Kaizen Steps is a beautifully designed habit-tracking and self-improvement platform designed to help users develop positive habits through incremental progress. The app integrates daily habit tracking, templates, stats visualization, and productivity-enhancing features like the Pomodoro timer with motivational quotes.\n\nThe name 'Kaizen' comes from the Japanese philosophy of continuous improvement, where small, consistent changes lead to remarkable results over time. This philosophy is embedded throughout the application, encouraging users to focus on making tiny 1% improvements consistently rather than radical changes.\n\nKey features include daily habit tracking with visual progress indicators, pre-defined habit templates for different life areas (fitness, nutrition, productivity), detailed statistics and insights with charts to visualize progress, and a Pomodoro timer to enhance focus and productivity while working on habits.",
+    "mainImage": "/images/kaizen-landing.png",
+    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Pomodoro Timer", "Chart.js", "Responsive Design"],
+    "demoUrl": "https://kaizensteps.vercel.app",
+    "githubUrl": "https://github.com/Filszu/habit-tracker",
     "featured": false,
     "screenshots": [
       {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "3D interactive hero section"
+        "image": "/images/kaizen-landing.png",
+        "description": "Landing page showcasing the app's clean design and core features"
       },
       {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "Projects showcase with filtering"
+        "image": "/images/kaizen-philosophy.png",
+        "description": "The Kaizen philosophy explained with the cooking analogy"
       },
       {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "Skills visualization with animated graphics"
+        "image": "/images/kaizen-tracker.png",
+        "description": "Weekly habit tracker with visual indicators for completion status"
       },
       {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "Contact form with validation and animations"
+        "image": "/images/kaizen-today.png",
+        "description": "Today's view with Pomodoro timer and motivational quotes"
+      },
+      {
+        "image": "/images/kaizen-templates.png",
+        "description": "Pre-defined habit templates for different life areas"
+      },
+      {
+        "image": "/images/kaizen-stats.png",
+        "description": "Statistics dashboard with charts for visualizing progress"
+      },
+      {
+        "image": "/images/kaizen-progress.png",
+        "description": "Today's progress view showing completed and pending habits"
       }
     ]
   },
   {
     "id": 5,
-    "slug": "weather-dashboard",
-    "title": "Weather Dashboard",
-    "description": "Real-time weather dashboard with interactive maps and forecasts.",
-    "longDescription": "This weather dashboard provides users with accurate and up-to-date weather information in an intuitive and visually appealing interface. The application fetches data from multiple weather APIs to ensure reliability and comprehensive coverage.\n\nUsers can search for locations, save favorites, and view detailed forecasts including temperature, precipitation, wind, humidity, and more. The interactive map allows users to explore weather patterns across different regions, and the charts provide visual representations of weather trends.",
-    "mainImage": "/placeholder.svg?height=600&width=800",
-    "tags": ["React", "Weather API", "Chart.js", "Leaflet", "Geolocation API", "PWA"],
-    "demoUrl": "https://weather-app.example.com",
-    "githubUrl": "https://github.com/filszu/weather-dashboard",
+    "slug": "boxing-timer",
+    "title": "Boxing Timer Pro",
+    "description": "Professional boxing training timer app with customizable rounds, rest periods, and training progress tracking.",
+    "longDescription": "Boxing Timer Pro is the perfect tool to help you track your boxing rounds, rest periods, and workouts. Ideal for training sessions and fitness routines, this app provides a professional experience for boxers and fitness enthusiasts alike.\n\nThe application features a clean, intuitive interface with both dark and light themes. The main timer display shows the current round, time remaining, and workout phase (work or rest period). Users can customize round duration, rest periods, number of rounds, and countdown warnings to suit their specific training needs.\n\nAdditional features include training progress tracking with visual charts showing total work time and number of rounds over time, a training history log to review past sessions, and fullscreen mode for better visibility during workouts. The app is fully responsive and works seamlessly on both desktop and mobile devices.",
+    "mainImage": "/images/boxing-timer-dark.png",
+    "tags": ["Next.js", "TypeScript", "Chart.js", "Responsive Design", "PWA", "Tailwind CSS"],
+    "demoUrl": "https://boxing-timer.ciac.me/",
+    "githubUrl": "https://github.com/Filszu/boxing-timer",
     "featured": false,
     "screenshots": [
       {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "Current weather display with hourly forecast"
+        "image": "/images/boxing-timer-dark.png",
+        "description": "Dark theme interface with circular timer and training progress charts"
       },
       {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "Interactive map showing weather conditions"
+        "image": "/images/boxing-timer-light.png",
+        "description": "Light theme interface showing workout session in progress"
       },
       {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "7-day forecast with detailed information"
+        "image": "/images/boxing-timer-mobile.png",
+        "description": "Mobile view showing rest period countdown in fullscreen mode"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "filszu-lessons",
+    "title": "FilszuLessons",
+    "description": "Interactive learning platform for programming and web development with personalized lessons and resources.",
+    "longDescription": "FilszuLessons is an educational platform I created to help students learn programming and web development. The site features a modern, engaging design with a distinctive yellow and dark blue color scheme that creates a vibrant learning environment.\n\nThe platform offers lessons in various programming languages including HTML, CSS, JavaScript, PHP, and Python. Each course is structured to provide a progressive learning path from basics to advanced concepts. The homepage features a friendly introduction and clear navigation to different learning paths.\n\nAs both the developer and instructor, I designed the platform to be approachable for beginners while offering depth for more advanced students. The site includes interactive examples, coding challenges, and personalized learning paths to accommodate different learning styles and goals.",
+    "mainImage": "/images/filszu-lessons-home.png",
+    "tags": ["Next.js", "TypeScript", "Educational Platform", "Interactive Learning", "Web Development"],
+    "demoUrl": "https://lessons.ciac.me/",
+    "githubUrl": "https://github.com/Filszu/filszuLessons",
+    "featured": false,
+    "screenshots": [
+      {
+        "image": "/images/filszu-lessons-home.png",
+        "description": "Homepage with friendly introduction and learning options"
       },
       {
-        "image": "/placeholder.svg?height=400&width=600",
-        "description": "Weather alerts and notifications panel"
+        "image": "/images/filszu-lessons-tech.png",
+        "description": "Programming languages and technologies offered on the platform"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "ww2-machines",
+    "title": "WW2 Machines Blog",
+    "description": "Historical blog exploring the machines of World War II including tanks, planes, ships, and their impact on military history.",
+    "longDescription": "WW2 Machines is a blog dedicated to exploring the fascinating world of World War II military technology. The site features detailed articles about various machines that played crucial roles during the war, including tanks, aircraft, ships, and other military vehicles.\n\nThe blog combines historical accuracy with engaging storytelling, making complex technical information accessible to both history enthusiasts and casual readers. Each article includes detailed specifications, historical context, and the impact these machines had on military operations and the war's outcome.\n\nBuilt with Next.js and Drizzle ORM, the site features a clean, responsive design that showcases historical photographs and technical illustrations. The filtering system allows users to browse articles by category (tanks, planes, ships) for a more focused reading experience.",
+    "mainImage": "/images/ww2-machines-home.png",
+    "tags": ["Next.js", "Drizzle ORM", "Historical Content", "Responsive Design", "Content Management"],
+    "demoUrl": "https://ww2machines.vercel.app/",
+    "githubUrl": "https://github.com/Filszu/ww2blog-nextjs-drizzle-orm",
+    "featured": false,
+    "screenshots": [
+      {
+        "image": "/images/ww2-machines-home.png",
+        "description": "Homepage with hero section and introduction to WW2 machines"
+      },
+      {
+        "image": "/images/ww2-machines-articles.png",
+        "description": "Articles page with filtering options for different machine types"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "card-studio",
+    "title": "Card Studio",
+    "description": "Web application for creating custom poker cards with your own images, multiple templates, and export options.",
+    "longDescription": "Card Studio is a powerful web application that allows users to create custom poker cards with their own images. Perfect for game nights, special events, or unique gifts, this tool provides a comprehensive set of features for designing personalized card decks.\n\nUsers can upload their own images for each card, choose from multiple card templates (Classic, Modern, Neon, Vintage, Minimalist, Dark Mode), customize card borders, colors, and text, and apply text formatting with various fonts and styles. The intuitive drag-and-drop interface makes positioning text elements easy and intuitive.\n\nThe application also supports batch operations for uploading multiple images at once and applying design changes to all cards simultaneously. Export options include individual cards as high-quality PNG images or the entire deck as a ZIP file. The responsive design ensures the app works well on both desktop and mobile devices.\n\nBuilt with Next.js and React, Card Studio features client-side image processing, persistent storage using local storage to save work across browser sessions, and a comprehensive history management system with undo and redo functionality.",
+    "mainImage": "/images/card-studio-home.png",
+    "tags": ["Next.js", "React", "Tailwind CSS", "Framer Motion", "Image Processing", "Drag-and-Drop"],
+    "demoUrl": "https://card-studio.vercel.app/",
+    "githubUrl": "https://github.com/Filszu/card-studio-Create-Custom-Poker-Cards-With-Your-Images",
+    "featured": false,
+    "screenshots": [
+      {
+        "image": "/images/card-studio-home.png",
+        "description": "Homepage showcasing the card creation capabilities"
+      },
+      {
+        "image": "/images/card-studio-editor.png",
+        "description": "Card editor interface with template selection options"
+      },
+      {
+        "image": "/images/card-studio-upload.png",
+        "description": "Image upload interface with card preview and deck management"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "leadloom",
+    "title": "LeadLoom",
+    "description": "Gamified lead generation platform that rewards users for playing games and completing challenges.",
+    "longDescription": "LeadLoom is an innovative platform that combines gaming with lead generation, allowing users to earn rewards by playing games and completing various challenges. The platform features a gamified approach to user engagement, with a focus on creating a fun and rewarding experience.\n\nThe application includes a comprehensive dashboard that tracks user progress, completed challenges, invited friends, and earned rewards. Users can see their statistics in real-time, including total rewards earned and paid out amounts. The platform also features interactive charts and analytics to visualize lead generation performance over time.\n\nBuilt with Next.js and integrated with Supabase for the backend, LeadLoom leverages modern web technologies including Three.js for 3D visualizations and ApexCharts for data representation. The project demonstrates advanced frontend development skills and the ability to create engaging, interactive user experiences.",
+    "mainImage": "/images/leadloom-hero.png",
+    "tags": ["Next.js", "Supabase", "Three.js", "React Three Fiber", "ApexCharts", "TanStack Table", "Framer Motion"],
+    "demoUrl": "https://leadloom.example.com",
+    "githubUrl": "https://github.com/filszu/leadloom",
+    "featured": false,
+    "screenshots": [
+      {
+        "image": "/images/leadloom-hero.png",
+        "description": "Hero section with Shrek character and call-to-action"
+      },
+      {
+        "image": "/images/leadloom-offer.png",
+        "description": "Limited-time offer with countdown timer and bonus promotion"
+      },
+      {
+        "image": "/images/leadloom-dashboard.png",
+        "description": "User dashboard showing completed challenges and rewards"
+      },
+      {
+        "image": "/images/leadloom-analytics.png",
+        "description": "Analytics page with interactive charts and challenge tracking"
       }
     ]
   }

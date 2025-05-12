@@ -138,3 +138,50 @@
     transform: rotate(0.0deg);
   }
 }
+
+/* Custom cursor for project cards and images */
+.cursor-pointer {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewport='0 0 100 100' style='fill:black;font-size:20px;'><text y='50%'>👆</text></svg>")
+    16 0, auto;
+}
+
+/* Ensure 16:9 aspect ratio for project images */
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+/* Improved aspect ratio for project images on wider screens */
+@media (min-width: 1024px) {
+  .project-image-container {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* Lightbox animation */
+.lightbox-overlay {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.lightbox-content {
+  animation: scaleIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

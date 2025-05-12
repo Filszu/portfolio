@@ -103,31 +103,35 @@ export default function Projects() {
               }}
               className={`transform ${project.id % 2 === 0 ? "rotate-1" : "rotate-[-1deg]"}`}
             >
-              <Card className="overflow-hidden h-full border-2 border-gray-200 shadow-lg rounded-xl">
-                <div className="relative h-48 w-full overflow-hidden group">
-                  <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }} className="w-full h-full">
-                    <Image
-                      src={project.mainImage || "/placeholder.svg"}
-                      alt={project.title}
-                      fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
-                  </motion.div>
+              <Card className="overflow-hidden h-full border-2 border-gray-200 shadow-lg rounded-xl hover:shadow-xl transition-all duration-300">
+                <div className="cursor-pointer">
+                  <Link href={`/projects/${project.slug}`} className="block">
+                    <div className="relative w-full aspect-video">
+                      <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }} className="w-full h-full">
+                        <Image
+                          src={project.mainImage || "/placeholder.svg"}
+                          alt={project.title}
+                          fill
+                          className="object-cover transition-transform duration-300 group-hover:scale-110"
+                        />
+                      </motion.div>
+                    </div>
+                    <CardHeader>
+                      <CardTitle className="handwritten text-xl">{project.title}</CardTitle>
+                      <CardDescription>{project.description}</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.tags.slice(0, 3).map((tag) => (
+                          <Badge key={tag} variant="outline" className="bg-pastel-yellow">
+                            {tag}
+                          </Badge>
+                        ))}
+                        {project.tags.length > 3 && <Badge variant="outline">+{project.tags.length - 3}</Badge>}
+                      </div>
+                    </CardContent>
+                  </Link>
                 </div>
-                <CardHeader>
-                  <CardTitle className="handwritten text-xl">{project.title}</CardTitle>
-                  <CardDescription>{project.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.slice(0, 3).map((tag) => (
-                      <Badge key={tag} variant="outline" className="bg-pastel-yellow">
-                        {tag}
-                      </Badge>
-                    ))}
-                    {project.tags.length > 3 && <Badge variant="outline">+{project.tags.length - 3}</Badge>}
-                  </div>
-                </CardContent>
                 <CardFooter className="flex justify-between">
                   <div className="flex gap-2">
                     <Button variant="outline" size="sm" asChild>
@@ -181,53 +185,61 @@ export default function Projects() {
               }}
               className="transform rotate-[-1deg]"
             >
-              <Card className="h-full border border-gray-200 shadow-md hover:shadow-lg transition-shadow">
-                <div className="relative h-32 w-full overflow-hidden group">
-                  <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }} className="w-full h-full">
-                    <Image
-                      src={project.mainImage || "/placeholder.svg"}
-                      alt={project.title}
-                      fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
-                  </motion.div>
+              <Card className="overflow-hidden h-full border-2 border-gray-200 shadow-md hover:shadow-lg transition-shadow rounded-xl">
+                <div className="cursor-pointer">
+                  <Link href={`/projects/${project.slug}`} className="block">
+                    <div className="relative w-full aspect-video">
+                      <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }} className="w-full h-full">
+                        <Image
+                          src={project.mainImage || "/placeholder.svg"}
+                          alt={project.title}
+                          fill
+                          className="object-cover transition-transform duration-300 group-hover:scale-110"
+                        />
+                      </motion.div>
+                    </div>
+                    <CardHeader className="pb-2">
+                      <CardTitle className="handwritten text-lg">{project.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="pb-2">
+                      <p className="text-sm text-gray-600 mb-3">{project.description}</p>
+                      <div className="flex flex-wrap gap-1 mb-2">
+                        {project.tags.slice(0, 2).map((tag) => (
+                          <Badge key={tag} variant="outline" className="text-xs bg-pastel-green">
+                            {tag}
+                          </Badge>
+                        ))}
+                        {project.tags.length > 2 && (
+                          <Badge variant="outline" className="text-xs">
+                            +{project.tags.length - 2}
+                          </Badge>
+                        )}
+                      </div>
+                    </CardContent>
+                  </Link>
                 </div>
-                <CardHeader className="pb-2">
-                  <CardTitle className="handwritten text-lg">{project.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="pb-2">
-                  <p className="text-sm text-gray-600 mb-3">{project.description}</p>
-                  <div className="flex flex-wrap gap-1 mb-2">
-                    {project.tags.slice(0, 2).map((tag) => (
-                      <Badge key={tag} variant="outline" className="text-xs bg-pastel-green">
-                        {tag}
-                      </Badge>
-                    ))}
-                    {project.tags.length > 2 && (
-                      <Badge variant="outline" className="text-xs">
-                        +{project.tags.length - 2}
-                      </Badge>
-                    )}
-                  </div>
-                </CardContent>
                 <CardFooter className="pt-0 flex justify-between">
-                  <Button variant="ghost" size="sm" className="text-xs p-0 h-auto" asChild>
+                  <div className="flex gap-2">
+                    <Button variant="outline" size="sm" className="text-xs" asChild>
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="mr-1 h-3 w-3" />
+                        Code
+                      </a>
+                    </Button>
+
+                    <Button variant="outline" size="sm" className="text-xs bg-pastel-green/20" asChild>
+                      <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                        <Play className="mr-1 h-3 w-3" />
+                        Demo
+                      </a>
+                    </Button>
+                  </div>
+
+                  <Button size="sm" className="text-xs bg-pastel-blue/20" asChild>
                     <Link href={`/projects/${project.slug}`} className="flex items-center">
-                      View details
+                      Details
                       <ArrowRight className="ml-1 h-3 w-3" />
                     </Link>
-                  </Button>
-
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="text-xs p-0 h-auto bg-pastel-green/20 px-2 rounded-md"
-                    asChild
-                  >
-                    <a href={project.demoUrl} className="flex items-center">
-                      <Play className="mr-1 h-3 w-3" />
-                      Demo
-                    </a>
                   </Button>
                 </CardFooter>
               </Card>

@@ -1,16 +1,14 @@
 "use client"
 
-import { useEffect, useState } from "react"
-import { useParams, useRouter } from "next/navigation"
+import { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
-import { DotLottieReact } from "@lottiefiles/dotlottie-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowLeft, ExternalLink, Github, Play, X, ChevronLeft, ChevronRight } from "lucide-react"
 import Link from "next/link"
-import projectsData from "@/data/project-details.json"
 
 type Screenshot = {
   image: string
@@ -31,27 +29,14 @@ type Project = {
   screenshots: Screenshot[]
 }
 
-export default function ProjectDetail() {
+interface ProjectDetailProps {
+  project: Project
+}
+
+export default function ProjectDetail({ project }: ProjectDetailProps) {
   const router = useRouter()
-  const { "project-id": projectId } = useParams()
-  const [project, setProject] = useState<Project | null>(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(false)
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [currentImage, setCurrentImage] = useState<Screenshot | null>(null)
-
-  useEffect(() => {
-    // Find the project by slug
-    const foundProject = projectsData.find((p) => p.slug === projectId)
-
-    if (foundProject) {
-      setProject(foundProject)
-      setLoading(false)
-    } else {
-      setError(true)
-      setLoading(false)
-    }
-  }, [projectId])
 
   const openLightbox = (screenshot: Screenshot) => {
     setCurrentImage(screenshot)
@@ -97,47 +82,6 @@ export default function ProjectDetail() {
       document.body.style.overflow = "auto"
     }
   }, [currentImage, project])
-
-  if (loading) {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-white">
-        <div className="w-64 h-64 mx-auto">
-          <DotLottieReact
-            src="https://lottie.host/0abf08b6-dd1e-4766-a314-fa9d257b509e/QxdZlYc9TQ.lottie"
-            loop
-            autoplay
-          />
-        </div>
-        <div className="card-note bg-pastel-yellow inline-block p-4 transform rotate-[1deg] mt-4">
-          <h2 className="text-xl font-bold handwritten">Loading project details...</h2>
-        </div>
-      </div>
-    )
-  }
-
-  if (error || !project) {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-white p-4">
-        <div className="w-64 h-64 mx-auto">
-          <DotLottieReact
-            src="https://lottie.host/2f4a3dd8-8b62-41c9-8305-5837004543df/1q3usIpAjV.lottie"
-            loop
-            autoplay
-          />
-        </div>
-        <div className="card-note bg-pastel-pink inline-block p-4 transform rotate-[-1deg] mt-4 mb-6">
-          <h2 className="text-xl font-bold handwritten">Project not found!</h2>
-        </div>
-        <Button
-          onClick={() => router.push("/projects")}
-          className="bg-pastel-blue hover:bg-blue-200 text-gray-800 border border-gray-300 shadow-sm handwritten"
-        >
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to Projects
-        </Button>
-      </div>
-    )
-  }
 
   return (
     <div className="min-h-screen bg-white">

@@ -33,7 +33,7 @@ export default function ContactFormModal() {
     setIsSubmitting(true)
 
     // Create mailto link with form data
-    const subject = encodeURIComponent(formState.subject || "Contact from Portfolio")
+    const subject = encodeURIComponent("Cooperation")
     const body = encodeURIComponent(
       `Name: ${formState.name}\nEmail: ${formState.email}\n\nMessage:\n${formState.message}`,
     )
