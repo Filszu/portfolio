@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "E-commerce Platform",
+    "description": "A full-stack e-commerce solution with payment integration and admin dashboard.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
+    "demoUrl": "#",
+    "githubUrl": "#",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "AI Content Generator",
+    "description": "Web app that generates content using AI models with customizable parameters.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "tags": ["React", "Node.js", "OpenAI API", "MongoDB"],
+    "demoUrl": "#",
+    "githubUrl": "#",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Task Management App",
+    "description": "Collaborative task management tool with real-time updates and notifications.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "tags": ["React", "Firebase", "Tailwind CSS"],
+    "demoUrl": "#",
+    "githubUrl": "#",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "Portfolio Website",
+    "description": "Interactive portfolio website with animations and 3D elements.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "tags": ["Next.js", "Three.js", "GSAP", "Tailwind CSS"],
+    "demoUrl": "#",
+    "githubUrl": "#",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Weather Dashboard",
+    "description": "Real-time weather dashboard with interactive maps and forecasts.",
+    "image": "/placeholder.svg?height=200&width=300",
+    "tags": ["React", "Weather API", "Chart.js", "Leaflet"],
+    "demoUrl": "#",
+    "githubUrl": "#",
+    "featured": false
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "slug": "e-commerce-platform",
+    "title": "E-commerce Platform",
+    "description": "A full-stack e-commerce solution with payment integration and admin dashboard. This project features a modern UI, responsive design, and seamless checkout experience. Users can browse products, add items to cart, and complete purchases using Stripe integration.",
+    "longDescription": "This e-commerce platform was built to provide small businesses with an affordable yet powerful online store solution. The project includes inventory management, order processing, customer accounts, and detailed analytics for store owners.\n\nThe admin dashboard gives store owners complete control over their products, orders, and customer data. The frontend is optimized for mobile devices and provides a smooth shopping experience across all devices.",
+    "mainImage": "/placeholder.svg?height=600&width=800",
+    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "MongoDB", "Redux"],
+    "demoUrl": "https://demo-ecommerce.example.com",
+    "githubUrl": "https://github.com/filszu/ecommerce-platform",
+    "featured": true,
+    "screenshots": [
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "Product listing page with filtering options"
+      },
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "Shopping cart with dynamic updates"
+      },
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "Admin dashboard with sales analytics"
+      },
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "Mobile responsive checkout process"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "ai-content-generator",
+    "title": "AI Content Generator",
+    "description": "Web app that generates content using AI models with customizable parameters.",
+    "longDescription": "This AI-powered content generation tool helps content creators, marketers, and writers overcome creative blocks and streamline their workflow. The application leverages state-of-the-art language models to generate high-quality content based on user prompts and parameters.\n\nUsers can customize the tone, style, and length of the generated content, making it suitable for various purposes such as blog posts, social media updates, product descriptions, and more. The application also includes a content history feature that allows users to save and organize their generated content.",
+    "mainImage": "/placeholder.svg?height=600&width=800",
+    "tags": ["React", "Node.js", "OpenAI API", "MongoDB", "Express", "JWT Authentication"],
+    "demoUrl": "https://ai-content-gen.example.com",
+    "githubUrl": "https://github.com/filszu/ai-content-generator",
+    "featured": true,
+    "screenshots": [
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "Content generation interface with parameters"
+      },
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "History of generated content with search functionality"
+      },
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "User dashboard showing usage statistics"
+      },
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "Mobile view of the content editor"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "task-management-app",
+    "title": "Task Management App",
+    "description": "Collaborative task management tool with real-time updates and notifications.",
+    "longDescription": "This task management application was designed to help teams collaborate effectively on projects. With real-time updates powered by Firebase, team members can see changes as they happen without needing to refresh the page.\n\nThe app includes features such as task assignment, due dates, priority levels, comments, file attachments, and progress tracking. Users receive notifications for task assignments, approaching deadlines, and mentions in comments.",
+    "mainImage": "/placeholder.svg?height=600&width=800",
+    "tags": ["React", "Firebase", "Tailwind CSS", "React DnD", "PWA"],
+    "demoUrl": "https://task-app.example.com",
+    "githubUrl": "https://github.com/filszu/task-management",
+    "featured": false,
+    "screenshots": [
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "Kanban board view with drag-and-drop functionality"
+      },
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "Task detail view with comments and activity log"
+      },
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "Team dashboard showing member activities"
+      },
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "Calendar view of upcoming tasks and deadlines"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "portfolio-website",
+    "title": "Portfolio Website",
+    "description": "Interactive portfolio website with animations and 3D elements.",
+    "longDescription": "This portfolio website showcases my work and skills through an interactive and visually engaging experience. The design emphasizes creativity and technical proficiency while maintaining excellent performance and accessibility.\n\nThe site features smooth animations, 3D elements, and interactive components that respond to user actions. The project section includes detailed case studies of my work, and the contact form makes it easy for potential clients or employers to reach out.",
+    "mainImage": "/placeholder.svg?height=600&width=800",
+    "tags": ["Next.js", "Three.js", "GSAP", "Tailwind CSS", "Framer Motion"],
+    "demoUrl": "https://portfolio.example.com",
+    "githubUrl": "https://github.com/filszu/portfolio",
+    "featured": false,
+    "screenshots": [
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "3D interactive hero section"
+      },
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "Projects showcase with filtering"
+      },
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "Skills visualization with animated graphics"
+      },
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "Contact form with validation and animations"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "weather-dashboard",
+    "title": "Weather Dashboard",
+    "description": "Real-time weather dashboard with interactive maps and forecasts.",
+    "longDescription": "This weather dashboard provides users with accurate and up-to-date weather information in an intuitive and visually appealing interface. The application fetches data from multiple weather APIs to ensure reliability and comprehensive coverage.\n\nUsers can search for locations, save favorites, and view detailed forecasts including temperature, precipitation, wind, humidity, and more. The interactive map allows users to explore weather patterns across different regions, and the charts provide visual representations of weather trends.",
+    "mainImage": "/placeholder.svg?height=600&width=800",
+    "tags": ["React", "Weather API", "Chart.js", "Leaflet", "Geolocation API", "PWA"],
+    "demoUrl": "https://weather-app.example.com",
+    "githubUrl": "https://github.com/filszu/weather-dashboard",
+    "featured": false,
+    "screenshots": [
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "Current weather display with hourly forecast"
+      },
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "Interactive map showing weather conditions"
+      },
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "7-day forecast with detailed information"
+      },
+      {
+        "image": "/placeholder.svg?height=400&width=600",
+        "description": "Weather alerts and notifications panel"
+      }
+    ]
+  }
+]
