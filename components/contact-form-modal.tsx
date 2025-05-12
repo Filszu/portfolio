@@ -177,19 +177,19 @@ export default function ContactFormModal() {
                   <div className="absolute -bottom-1 left-2 right-2 h-[1px] bg-gray-200"></div>
                 </div>
 
-                <div className="sticky-note transform rotate-[3deg] p-3 text-sm mb-6 ml-auto mr-4 w-fit">
+                <div className="sticky-note transform rotate-[3deg] p-3 text-sm mb-6 ml-auto w-fit flex items-center justify-center"> 
                   <p className="handwritten">Can't wait to hear from you! 😊</p>
                 </div>
 
                 <div className="flex flex-wrap items-center justify-between gap-4 mt-8">
-                  <motion.div
+                  {/* <motion.div
                     whileHover={{ scale: 1.05, rotate: -2 }}
                     className="bg-pastel-pink p-3 rounded-md shadow-sm transform rotate-[-1deg]"
                   >
                     <p className="handwritten text-sm">All messages are confidential!</p>
-                  </motion.div>
+                  </motion.div> */}
 
-                  <div className="flex gap-4">
+                  <div className="flex gap-4 justify-center items-center">
                     <Button
                       type="submit"
                       className="bg-pastel-blue hover:bg-blue-200 text-gray-800 border border-gray-300 shadow-sm handwritten"

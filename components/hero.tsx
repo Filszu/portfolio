@@ -178,7 +178,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
             >
-              <Card className="p-5 bg-pastel-pink transform rotate-[-1deg] shadow-md">
+              <Card className="mt-10 p-5 bg-pastel-pink transform rotate-[-1deg] shadow-md">
                 <h3 className="text-xl font-bold mb-3 handwritten">
                   Let&apos;s Connect!
                 </h3>
