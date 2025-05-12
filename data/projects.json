@@ -42,7 +42,7 @@
   {
     "id": 6,
     "title": "FilszuLessons",
-    "description": "Interactive learning platform for programming and web development with personalized lessons and resources.",
+    "description": "My personal tutoring website for programming—learn to code with passion and years of experience!",
     "image": "/images/filszu-lessons-home.png",
     "tags": ["Next.js", "TypeScript", "Educational Platform"],
     "demoUrl": "https://lessons.ciac.me/",
@@ -71,12 +71,12 @@
   },
   {
     "id": 3,
-    "title": "LeadLoom",
+    "title": "LEADLOOM.games",
     "description": "Gamified lead generation platform that rewards users for playing games and completing challenges.",
     "image": "/images/leadloom-hero.png",
     "tags": ["Next.js", "Supabase", "Three.js", "React Three Fiber", "ApexCharts"],
-    "demoUrl": "https://leadloom.example.com",
-    "githubUrl": "https://github.com/filszu/leadloom",
+    "demoUrl": "https://LEADLOOM.games.example.com",
+    "githubUrl": "https://github.com/filszu/LEADLOOM.games",
     "featured": false
   }
 ]

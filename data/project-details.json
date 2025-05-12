@@ -6,7 +6,15 @@
     "description": "Interactive web app that allows users to vote for their favorite songs and influence what plays on Radio Elektron.",
     "longDescription": "PartyVote is an interactive web application that allows users to vote for their favorite songs and influence what plays on Radio Elektron. The app creates an engaging experience for radio listeners and event attendees by giving them control over the music playlist.\n\nThe application features real-time voting, playlist management, and integration with popular music services like Spotify and YouTube Music. It includes an admin panel for hosts to manage songs, configure party settings, and access developer tools. The platform also offers premium features through Stripe payment integration.",
     "mainImage": "/images/partyvote-main.png",
-    "tags": ["Next.js", "Supabase", "TypeScript", "Google Cloud Platform", "Stripe", "Spotify API", "PostgreSQL"],
+    "tags": [
+      "Next.js",
+      "Supabase",
+      "TypeScript",
+      "Google Cloud Platform",
+      "Stripe",
+      "Spotify API",
+      "PostgreSQL"
+    ],
     "demoUrl": "https://partyvote.ciac.me",
     "githubUrl": "https://github.com/filszu/partyvote",
     "featured": true,
@@ -48,7 +56,13 @@
     "description": "Commercial website for a military-themed recreation center offering survival camps, paintball, and team-building activities.",
     "longDescription": "OSIR Bunkier is a commercial project for a military-themed recreation center located in Świdnica, Poland. The website showcases their various offerings including survival camps for children, paintball activities, and venues for birthday parties and corporate events.\n\nThe site features a modern, responsive design with a military aesthetic that matches the brand's identity. Key sections include information about their activities, testimonials from satisfied customers, and contact details for booking events.\n\nAs the developer, I implemented the entire frontend using Next.js and TypeScript, ensuring a smooth user experience across all devices while maintaining the distinctive visual style that represents the OSIR Bunkier brand.",
     "mainImage": "/images/osir-bunkier-hero.png",
-    "tags": ["Next.js", "TypeScript", "CSS3", "Responsive Design", "Commercial Project"],
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "CSS3",
+      "Responsive Design",
+      "Commercial Project"
+    ],
     "demoUrl": "https://www.bunkier.zgora.pl/",
     "githubUrl": "https://github.com/filszu/bunkier-website",
     "featured": true,
@@ -78,7 +92,14 @@
     "description": "Beautiful designed habit-tracking and self-improvement platform to help users develop positive habits through incremental progress.",
     "longDescription": "Kaizen Steps is a beautifully designed habit-tracking and self-improvement platform designed to help users develop positive habits through incremental progress. The app integrates daily habit tracking, templates, stats visualization, and productivity-enhancing features like the Pomodoro timer with motivational quotes.\n\nThe name 'Kaizen' comes from the Japanese philosophy of continuous improvement, where small, consistent changes lead to remarkable results over time. This philosophy is embedded throughout the application, encouraging users to focus on making tiny 1% improvements consistently rather than radical changes.\n\nKey features include daily habit tracking with visual progress indicators, pre-defined habit templates for different life areas (fitness, nutrition, productivity), detailed statistics and insights with charts to visualize progress, and a Pomodoro timer to enhance focus and productivity while working on habits.",
     "mainImage": "/images/kaizen-landing.png",
-    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Pomodoro Timer", "Chart.js", "Responsive Design"],
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Pomodoro Timer",
+      "Chart.js",
+      "Responsive Design"
+    ],
     "demoUrl": "https://kaizensteps.vercel.app",
     "githubUrl": "https://github.com/Filszu/habit-tracker",
     "featured": false,
@@ -114,13 +135,87 @@
     ]
   },
   {
+    "id": 3,
+    "slug": "leadloom",
+    "title": "LEADLOOM.games",
+    "description": "Gamified lead generation platform that rewards users for playing games and completing challenges.",
+    "longDescription": "LEADLOOM.games is an innovative platform that combines gaming with lead generation, allowing users to earn rewards by playing games and completing various challenges. The platform features a gamified approach to user engagement, with a focus on creating a fun and rewarding experience.\n\nThe application includes a comprehensive dashboard that tracks user progress, completed challenges, invited friends, and earned rewards. Users can see their statistics in real-time, including total rewards earned and paid out amounts. The platform also features interactive charts and analytics to visualize lead generation performance over time.\n\nBuilt with Next.js and integrated with Supabase for the backend, LEADLOOM.games leverages modern web technologies including Three.js for 3D visualizations and ApexCharts for data representation. The project demonstrates advanced frontend development skills and the ability to create engaging, interactive user experiences.",
+    "mainImage": "/images/leadloom-hero.png",
+    "tags": [
+      "Next.js",
+      "Supabase",
+      "Three.js",
+      "React Three Fiber",
+      "ApexCharts",
+      "TanStack Table",
+      "Framer Motion"
+    ],
+    "demoUrl": "https://leadloom.games/",
+    "githubUrl": "https://github.com/filszu/leadloom",
+    "featured": false,
+    "screenshots": [
+      {
+        "image": "/images/leadloom-hero.png",
+        "description": "Hero section with Shrek character and call-to-action"
+      },
+      {
+        "image": "/images/leadloom-offer.png",
+        "description": "Limited-time offer with countdown timer and bonus promotion"
+      },
+      {
+        "image": "/images/leadloom-dashboard.png",
+        "description": "User dashboard showing completed challenges and rewards"
+      },
+      {
+        "image": "/images/leadloom-analytics.png",
+        "description": "Analytics page with interactive charts and challenge tracking"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "filszu-lessons",
+    "title": "FilszuLessons",
+    "description": "My personal tutoring website for programming—learn to code with passion and years of experience!",
+
+    "longDescription": "FilszuLessons is my personal tutoring site, created to share my passion for teaching programming and web development. I’ve been offering private tutoring for several years, helping students of all levels understand how to code—from complete beginners to aspiring professionals.\n\nThe website is designed to be friendly, modern, and clear, using an energetic yellow and dark blue color scheme that makes learning enjoyable. You’ll find structured lessons covering HTML, CSS, JavaScript, PHP, and Python. Each course progresses from fundamentals to advanced topics.\n\nAs both the developer and the tutor behind FilszuLessons, I’ve tailored the content to adapt to different learning styles. There are interactive examples, real coding challenges, and personalized feedback. If you're serious about learning programming and want real support from someone who truly enjoys teaching—get in touch with me!",
+    "mainImage": "/images/filszu-lessons-home.png",
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "Educational Platform",
+      "Interactive Learning",
+      "Web Development"
+    ],
+    "demoUrl": "https://lessons.ciac.me/",
+    "githubUrl": "https://github.com/Filszu/filszuLessons",
+    "featured": false,
+    "screenshots": [
+      {
+        "image": "/images/filszu-lessons-home.png",
+        "description": "Homepage with friendly introduction and learning options"
+      },
+      {
+        "image": "/images/filszu-lessons-tech.png",
+        "description": "Programming languages and technologies offered on the platform"
+      }
+    ]
+  },
+  {
     "id": 5,
     "slug": "boxing-timer",
     "title": "Boxing Timer Pro",
     "description": "Professional boxing training timer app with customizable rounds, rest periods, and training progress tracking.",
     "longDescription": "Boxing Timer Pro is the perfect tool to help you track your boxing rounds, rest periods, and workouts. Ideal for training sessions and fitness routines, this app provides a professional experience for boxers and fitness enthusiasts alike.\n\nThe application features a clean, intuitive interface with both dark and light themes. The main timer display shows the current round, time remaining, and workout phase (work or rest period). Users can customize round duration, rest periods, number of rounds, and countdown warnings to suit their specific training needs.\n\nAdditional features include training progress tracking with visual charts showing total work time and number of rounds over time, a training history log to review past sessions, and fullscreen mode for better visibility during workouts. The app is fully responsive and works seamlessly on both desktop and mobile devices.",
     "mainImage": "/images/boxing-timer-dark.png",
-    "tags": ["Next.js", "TypeScript", "Chart.js", "Responsive Design", "PWA", "Tailwind CSS"],
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "Chart.js",
+      "Responsive Design",
+      "PWA",
+      "Tailwind CSS"
+    ],
     "demoUrl": "https://boxing-timer.ciac.me/",
     "githubUrl": "https://github.com/Filszu/boxing-timer",
     "featured": false,
@@ -139,28 +234,7 @@
       }
     ]
   },
-  {
-    "id": 6,
-    "slug": "filszu-lessons",
-    "title": "FilszuLessons",
-    "description": "Interactive learning platform for programming and web development with personalized lessons and resources.",
-    "longDescription": "FilszuLessons is an educational platform I created to help students learn programming and web development. The site features a modern, engaging design with a distinctive yellow and dark blue color scheme that creates a vibrant learning environment.\n\nThe platform offers lessons in various programming languages including HTML, CSS, JavaScript, PHP, and Python. Each course is structured to provide a progressive learning path from basics to advanced concepts. The homepage features a friendly introduction and clear navigation to different learning paths.\n\nAs both the developer and instructor, I designed the platform to be approachable for beginners while offering depth for more advanced students. The site includes interactive examples, coding challenges, and personalized learning paths to accommodate different learning styles and goals.",
-    "mainImage": "/images/filszu-lessons-home.png",
-    "tags": ["Next.js", "TypeScript", "Educational Platform", "Interactive Learning", "Web Development"],
-    "demoUrl": "https://lessons.ciac.me/",
-    "githubUrl": "https://github.com/Filszu/filszuLessons",
-    "featured": false,
-    "screenshots": [
-      {
-        "image": "/images/filszu-lessons-home.png",
-        "description": "Homepage with friendly introduction and learning options"
-      },
-      {
-        "image": "/images/filszu-lessons-tech.png",
-        "description": "Programming languages and technologies offered on the platform"
-      }
-    ]
-  },
+
   {
     "id": 7,
     "slug": "ww2-machines",
@@ -168,7 +242,13 @@
     "description": "Historical blog exploring the machines of World War II including tanks, planes, ships, and their impact on military history.",
     "longDescription": "WW2 Machines is a blog dedicated to exploring the fascinating world of World War II military technology. The site features detailed articles about various machines that played crucial roles during the war, including tanks, aircraft, ships, and other military vehicles.\n\nThe blog combines historical accuracy with engaging storytelling, making complex technical information accessible to both history enthusiasts and casual readers. Each article includes detailed specifications, historical context, and the impact these machines had on military operations and the war's outcome.\n\nBuilt with Next.js and Drizzle ORM, the site features a clean, responsive design that showcases historical photographs and technical illustrations. The filtering system allows users to browse articles by category (tanks, planes, ships) for a more focused reading experience.",
     "mainImage": "/images/ww2-machines-home.png",
-    "tags": ["Next.js", "Drizzle ORM", "Historical Content", "Responsive Design", "Content Management"],
+    "tags": [
+      "Next.js",
+      "Drizzle ORM",
+      "Historical Content",
+      "Responsive Design",
+      "Content Management"
+    ],
     "demoUrl": "https://ww2machines.vercel.app/",
     "githubUrl": "https://github.com/Filszu/ww2blog-nextjs-drizzle-orm",
     "featured": false,
@@ -190,7 +270,14 @@
     "description": "Web application for creating custom poker cards with your own images, multiple templates, and export options.",
     "longDescription": "Card Studio is a powerful web application that allows users to create custom poker cards with their own images. Perfect for game nights, special events, or unique gifts, this tool provides a comprehensive set of features for designing personalized card decks.\n\nUsers can upload their own images for each card, choose from multiple card templates (Classic, Modern, Neon, Vintage, Minimalist, Dark Mode), customize card borders, colors, and text, and apply text formatting with various fonts and styles. The intuitive drag-and-drop interface makes positioning text elements easy and intuitive.\n\nThe application also supports batch operations for uploading multiple images at once and applying design changes to all cards simultaneously. Export options include individual cards as high-quality PNG images or the entire deck as a ZIP file. The responsive design ensures the app works well on both desktop and mobile devices.\n\nBuilt with Next.js and React, Card Studio features client-side image processing, persistent storage using local storage to save work across browser sessions, and a comprehensive history management system with undo and redo functionality.",
     "mainImage": "/images/card-studio-home.png",
-    "tags": ["Next.js", "React", "Tailwind CSS", "Framer Motion", "Image Processing", "Drag-and-Drop"],
+    "tags": [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Image Processing",
+      "Drag-and-Drop"
+    ],
     "demoUrl": "https://card-studio.vercel.app/",
     "githubUrl": "https://github.com/Filszu/card-studio-Create-Custom-Poker-Cards-With-Your-Images",
     "featured": false,
@@ -206,36 +293,6 @@
       {
         "image": "/images/card-studio-upload.png",
         "description": "Image upload interface with card preview and deck management"
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "slug": "leadloom",
-    "title": "LeadLoom",
-    "description": "Gamified lead generation platform that rewards users for playing games and completing challenges.",
-    "longDescription": "LeadLoom is an innovative platform that combines gaming with lead generation, allowing users to earn rewards by playing games and completing various challenges. The platform features a gamified approach to user engagement, with a focus on creating a fun and rewarding experience.\n\nThe application includes a comprehensive dashboard that tracks user progress, completed challenges, invited friends, and earned rewards. Users can see their statistics in real-time, including total rewards earned and paid out amounts. The platform also features interactive charts and analytics to visualize lead generation performance over time.\n\nBuilt with Next.js and integrated with Supabase for the backend, LeadLoom leverages modern web technologies including Three.js for 3D visualizations and ApexCharts for data representation. The project demonstrates advanced frontend development skills and the ability to create engaging, interactive user experiences.",
-    "mainImage": "/images/leadloom-hero.png",
-    "tags": ["Next.js", "Supabase", "Three.js", "React Three Fiber", "ApexCharts", "TanStack Table", "Framer Motion"],
-    "demoUrl": "https://leadloom.example.com",
-    "githubUrl": "https://github.com/filszu/leadloom",
-    "featured": false,
-    "screenshots": [
-      {
-        "image": "/images/leadloom-hero.png",
-        "description": "Hero section with Shrek character and call-to-action"
-      },
-      {
-        "image": "/images/leadloom-offer.png",
-        "description": "Limited-time offer with countdown timer and bonus promotion"
-      },
-      {
-        "image": "/images/leadloom-dashboard.png",
-        "description": "User dashboard showing completed challenges and rewards"
-      },
-      {
-        "image": "/images/leadloom-analytics.png",
-        "description": "Analytics page with interactive charts and challenge tracking"
       }
     ]
   }

@@ -61,7 +61,7 @@ export default function ContactFormModal() {
           Let&apos;s Chat
         </span>
         <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-gray-800 z-20">
-          <span className="handwritten text-lg">✉️ Message Me!</span>
+          <span className="handwritten text-base">✉️ Message Me!</span>
         </div>
       </ModalTrigger>
 

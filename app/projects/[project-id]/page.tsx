@@ -1,118 +1,136 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import { useParams, useRouter } from "next/navigation"
-import { motion, AnimatePresence } from "framer-motion"
-import Image from "next/image"
-import { DotLottieReact } from "@lottiefiles/dotlottie-react"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { ArrowLeft, ExternalLink, Github, Play, X, ChevronLeft, ChevronRight } from "lucide-react"
-import Link from "next/link"
-import projectsData from "@/data/project-details.json"
+import { useEffect, useState } from "react";
+import { useParams, useRouter } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  ArrowLeft,
+  ExternalLink,
+  Github,
+  Play,
+  X,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
+import Link from "next/link";
+import projectsData from "@/data/project-details.json";
 
 type Screenshot = {
-  image: string
-  description: string
-}
+  image: string;
+  description: string;
+};
 
 type Project = {
-  id: number
-  slug: string
-  title: string
-  description: string
-  longDescription: string
-  mainImage: string
-  tags: string[]
-  demoUrl: string
-  githubUrl: string
-  featured: boolean
-  screenshots: Screenshot[]
-}
+  id: number;
+  slug: string;
+  title: string;
+  description: string;
+  longDescription: string;
+  mainImage: string;
+  tags: string[];
+  demoUrl: string;
+  githubUrl: string;
+  featured: boolean;
+  screenshots: Screenshot[];
+};
 
 export default function ProjectDetail() {
-  const router = useRouter()
-  const { "project-id": projectId } = useParams()
-  const [project, setProject] = useState<Project | null>(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(false)
-  const [lightboxOpen, setLightboxOpen] = useState(false)
-  const [currentImage, setCurrentImage] = useState<Screenshot | null>(null)
+  const router = useRouter();
+  const { "project-id": projectId } = useParams();
+  const [project, setProject] = useState<Project | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState<Screenshot | null>(null);
 
   useEffect(() => {
     // Find the project by slug
-    const foundProject = projectsData.find((p) => p.slug === projectId)
+    const foundProject = projectsData.find((p) => p.slug === projectId);
 
     if (foundProject) {
-      setProject(foundProject)
-      setLoading(false)
+      setProject(foundProject);
+      setLoading(false);
     } else {
-      setError(true)
-      setLoading(false)
+      setError(true);
+      setLoading(false);
     }
-  }, [projectId])
+  }, [projectId]);
 
   const openLightbox = (screenshot: Screenshot) => {
-    setCurrentImage(screenshot)
-    setLightboxOpen(true)
-    document.body.style.overflow = "hidden"
-  }
+    setCurrentImage(screenshot);
+    setLightboxOpen(true);
+    document.body.style.overflow = "hidden";
+  };
 
   const closeLightbox = () => {
-    setLightboxOpen(false)
-    document.body.style.overflow = "auto"
-  }
+    setLightboxOpen(false);
+    document.body.style.overflow = "auto";
+  };
 
   const navigateToNextImage = () => {
-    if (!project || !currentImage) return
-    const currentIndex = project.screenshots.findIndex((s) => s.image === currentImage.image)
-    const nextIndex = (currentIndex + 1) % project.screenshots.length
-    setCurrentImage(project.screenshots[nextIndex])
-  }
+    if (!project || !currentImage) return;
+    const currentIndex = project.screenshots.findIndex(
+      (s) => s.image === currentImage.image
+    );
+    const nextIndex = (currentIndex + 1) % project.screenshots.length;
+    setCurrentImage(project.screenshots[nextIndex]);
+  };
 
   const navigateToPrevImage = () => {
-    if (!project || !currentImage) return
-    const currentIndex = project.screenshots.findIndex((s) => s.image === currentImage.image)
-    const prevIndex = (currentIndex - 1 + project.screenshots.length) % project.screenshots.length
-    setCurrentImage(project.screenshots[prevIndex])
-  }
+    if (!project || !currentImage) return;
+    const currentIndex = project.screenshots.findIndex(
+      (s) => s.image === currentImage.image
+    );
+    const prevIndex =
+      (currentIndex - 1 + project.screenshots.length) %
+      project.screenshots.length;
+    setCurrentImage(project.screenshots[prevIndex]);
+  };
 
   const handleKeyDown = (e: KeyboardEvent) => {
     if (e.key === "Escape") {
-      closeLightbox()
+      closeLightbox();
     }
     if (e.key === "ArrowRight") {
-      navigateToNextImage()
+      navigateToNextImage();
     }
     if (e.key === "ArrowLeft") {
-      navigateToPrevImage()
+      navigateToPrevImage();
     }
-  }
+  };
 
   useEffect(() => {
-    window.addEventListener("keydown", handleKeyDown)
+    window.addEventListener("keydown", handleKeyDown);
     return () => {
-      window.removeEventListener("keydown", handleKeyDown)
-      document.body.style.overflow = "auto"
-    }
-  }, [currentImage, project])
+      window.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "auto";
+    };
+  }, [currentImage, project]);
 
   if (loading) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-white">
         <div className="w-64 h-64 mx-auto">
           <DotLottieReact
-            src="https://lottie.host/0abf08b6-dd1e-4766-a314-fa9d257b509e/QxdZlYc9TQ.lottie"
+            src="https://lottie.host/2f4a3dd8-8b62-41c9-8305-5837004543df/1q3usIpAjV.lottie"
             loop
             autoplay
           />
+
+          
         </div>
         <div className="card-note bg-pastel-yellow inline-block p-4 transform rotate-[1deg] mt-4">
-          <h2 className="text-xl font-bold handwritten">Loading project details...</h2>
+          <h2 className="text-xl font-bold handwritten">
+            Loading project details...
+          </h2>
         </div>
       </div>
-    )
+    );
   }
 
   if (error || !project) {
@@ -136,7 +154,7 @@ export default function ProjectDetail() {
           Back to Projects
         </Button>
       </div>
-    )
+    );
   }
 
   return (
@@ -167,7 +185,9 @@ export default function ProjectDetail() {
           className="mb-8"
         >
           <div className="card-note bg-pastel-purple inline-block p-4 transform rotate-[-1deg] mb-4">
-            <h1 className="text-3xl md:text-4xl font-bold handwritten">{project.title}</h1>
+            <h1 className="text-3xl md:text-4xl font-bold handwritten">
+              {project.title}
+            </h1>
           </div>
         </motion.div>
 
@@ -183,7 +203,11 @@ export default function ProjectDetail() {
             <Card
               className="overflow-hidden border-2 border-gray-200 shadow-lg rounded-xl transform rotate-[1deg] cursor-pointer"
               onClick={() =>
-                project.mainImage && openLightbox({ image: project.mainImage, description: project.title })
+                project.mainImage &&
+                openLightbox({
+                  image: project.mainImage,
+                  description: project.title,
+                })
               }
             >
               <div className="relative w-full aspect-video">
@@ -205,12 +229,16 @@ export default function ProjectDetail() {
           >
             <Card className="h-full border-2 border-gray-200 shadow-md bg-pastel-yellow transform rotate-[-1deg]">
               <CardContent className="p-6">
-                <h2 className="text-xl font-bold mb-4 handwritten">Project Details</h2>
+                <h2 className="text-xl font-bold mb-4 handwritten">
+                  Project Details
+                </h2>
 
                 <p className="text-gray-700 mb-6">{project.description}</p>
 
                 <div className="mb-6">
-                  <h3 className="text-lg font-semibold mb-2 handwritten">Technologies</h3>
+                  <h3 className="text-lg font-semibold mb-2 handwritten">
+                    Technologies
+                  </h3>
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
                       <Badge key={tag} variant="outline" className="bg-white">
@@ -225,7 +253,11 @@ export default function ProjectDetail() {
                     className="bg-pastel-green hover:bg-green-200 text-gray-800 border border-gray-300 shadow-sm w-full"
                     asChild
                   >
-                    <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Play className="mr-2 h-4 w-4" />
                       Live Demo
                     </a>
@@ -236,7 +268,11 @@ export default function ProjectDetail() {
                     className="bg-white hover:bg-gray-100 border border-gray-300 shadow-sm w-full"
                     asChild
                   >
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Github className="mr-2 h-4 w-4" />
                       View Code
                     </a>
@@ -256,13 +292,17 @@ export default function ProjectDetail() {
         >
           <Card className="border-2 border-gray-200 shadow-md bg-pastel-blue transform rotate-[0.5deg]">
             <CardContent className="p-6">
-              <h2 className="text-2xl font-bold mb-4 handwritten">About This Project</h2>
+              <h2 className="text-2xl font-bold mb-4 handwritten">
+                About This Project
+              </h2>
               <div className="prose max-w-none">
-                {project.longDescription.split("\n\n").map((paragraph, index) => (
-                  <p key={index} className="mb-4 text-gray-700">
-                    {paragraph}
-                  </p>
-                ))}
+                {project.longDescription
+                  .split("\n\n")
+                  .map((paragraph, index) => (
+                    <p key={index} className="mb-4 text-gray-700">
+                      {paragraph}
+                    </p>
+                  ))}
               </div>
             </CardContent>
           </Card>
@@ -276,7 +316,9 @@ export default function ProjectDetail() {
           className="my-12"
         >
           <div className="sticky-note inline-block px-4 py-2 mb-6">
-            <h2 className="text-2xl font-bold handwritten">Project Screenshots</h2>
+            <h2 className="text-2xl font-bold handwritten">
+              Project Screenshots
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -291,20 +333,27 @@ export default function ProjectDetail() {
                   rotate: index % 2 === 0 ? 1 : -1,
                   transition: { type: "spring", stiffness: 400 },
                 }}
-                className={`transform ${index % 2 === 0 ? "rotate-1" : "rotate-[-1deg]"}`}
+                className={`transform ${
+                  index % 2 === 0 ? "rotate-1" : "rotate-[-1deg]"
+                }`}
                 onClick={() => openLightbox(screenshot)}
               >
                 <Card className="overflow-hidden border-2 border-gray-200 shadow-md cursor-pointer">
                   <div className="relative w-full aspect-video">
                     <Image
                       src={screenshot.image || "/placeholder.svg"}
-                      alt={screenshot.description || `${project.title} screenshot ${index + 1}`}
+                      alt={
+                        screenshot.description ||
+                        `${project.title} screenshot ${index + 1}`
+                      }
                       fill
                       className="object-cover"
                     />
                   </div>
                   <CardContent className="p-4">
-                    <p className="text-gray-700 handwritten">{screenshot.description}</p>
+                    <p className="text-gray-700 handwritten">
+                      {screenshot.description}
+                    </p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -381,7 +430,9 @@ export default function ProjectDetail() {
               </div>
 
               <div className="bg-white p-4 mt-2 rounded-md">
-                <p className="text-lg handwritten">{currentImage.description}</p>
+                <p className="text-lg handwritten">
+                  {currentImage.description}
+                </p>
               </div>
 
               <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-16">
@@ -390,8 +441,8 @@ export default function ProjectDetail() {
                   size="icon"
                   className="bg-white rounded-full h-12 w-12 shadow-lg"
                   onClick={(e) => {
-                    e.stopPropagation()
-                    navigateToPrevImage()
+                    e.stopPropagation();
+                    navigateToPrevImage();
                   }}
                 >
                   <ChevronLeft className="h-6 w-6" />
@@ -404,8 +455,8 @@ export default function ProjectDetail() {
                   size="icon"
                   className="bg-white rounded-full h-12 w-12 shadow-lg"
                   onClick={(e) => {
-                    e.stopPropagation()
-                    navigateToNextImage()
+                    e.stopPropagation();
+                    navigateToNextImage();
                   }}
                 >
                   <ChevronRight className="h-6 w-6" />
@@ -416,5 +467,5 @@ export default function ProjectDetail() {
         )}
       </AnimatePresence>
     </div>
-  )
+  );
 }

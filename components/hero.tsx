@@ -1,43 +1,47 @@
-"use client"
+"use client";
 
-import { useEffect, useRef } from "react"
-import { motion } from "framer-motion"
-import Image from "next/image"
-import { Github, Instagram, Linkedin } from "lucide-react"
-import { Card } from "@/components/ui/card"
-import ColourfulText from "@/components/ui/colourful-text"
-import ContactFormModal from "@/components/contact-form-modal"
-import { DotLottieReact } from "@lottiefiles/dotlottie-react"
+import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { Github, Instagram, Linkedin } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import ColourfulText from "@/components/ui/colourful-text";
+import ContactFormModal from "@/components/contact-form-modal";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import Link from "next/link";
 
 export default function Hero() {
-  const containerRef = useRef<HTMLDivElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      if (!containerRef.current) return
+      if (!containerRef.current) return;
 
-      const { left, top, width, height } = containerRef.current.getBoundingClientRect()
-      const x = (e.clientX - left) / width - 0.5
-      const y = (e.clientY - top) / height - 0.5
+      const { left, top, width, height } =
+        containerRef.current.getBoundingClientRect();
+      const x = (e.clientX - left) / width - 0.5;
+      const y = (e.clientY - top) / height - 0.5;
 
-      const elements = containerRef.current.querySelectorAll(".tilt-element")
+      const elements = containerRef.current.querySelectorAll(".tilt-element");
       elements.forEach((el) => {
-        const htmlEl = el as HTMLElement
-        htmlEl.style.transform = `perspective(1000px) rotateY(${x * 5}deg) rotateX(${y * -5}deg)`
-      })
-    }
+        const htmlEl = el as HTMLElement;
+        htmlEl.style.transform = `perspective(1000px) rotateY(${
+          x * 5
+        }deg) rotateX(${y * -5}deg)`;
+      });
+    };
 
-    const container = containerRef.current
+    const container = containerRef.current;
     if (container) {
-      container.addEventListener("mousemove", handleMouseMove)
+      container.addEventListener("mousemove", handleMouseMove);
     }
 
     return () => {
       if (container) {
-        container.removeEventListener("mousemove", handleMouseMove)
+        container.removeEventListener("mousemove", handleMouseMove);
       }
-    }
-  }, [])
+    };
+  }, []);
 
   return (
     <header className="w-full relative overflow-visible bg-white">
@@ -46,9 +50,17 @@ export default function Hero() {
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       </div>
 
-      <div className="container mx-auto px-4 py-16 relative z-10" ref={containerRef}>
+      <div
+        className="container mx-auto px-4 py-16 relative z-10"
+        ref={containerRef}
+      >
         <div className="absolute -right-10 top-10 rotate-12 opacity-30 z-0">
-          <Image src="/images/painting.png" alt="Decorative illustration" width={300} height={300} />
+          <Image
+            src="/images/painting.png"
+            alt="Decorative illustration"
+            width={300}
+            height={300}
+          />
         </div>
 
         <motion.div
@@ -66,8 +78,21 @@ export default function Hero() {
               <h1 className="text-4xl md:text-5xl font-bold mb-2 handwritten flex items-center">
                 Hi, I&apos;m filszu <span className="wave ml-2">👋</span>
               </h1>
-              <p className="text-gray-600 text-lg mb-2 handwritten">my name is filip /filʃu/</p>
-              <p className="text-gray-700 mt-3">I'm a fullstack website developer...</p>
+              <p className="text-gray-600 text-lg mb-2 handwritten">
+                my name is filip you can call me Filszu <i>/filʃu/</i>
+              </p>
+              <p className="text-gray-700 mt-3">
+                I'm a{" "}
+                <span className="font-bold text-blue-600">
+                  full-stack website developer
+                </span>{" "}
+                💻 with a passion for programming since childhood. <br />I love
+                creating websites, especially meaningful tools that bring value
+                to people and communities 🌍.
+                <br />
+                For me, coding is not just a job — it's a way to build, improve
+                , and make a positive impact on the world around me ✨.
+              </p>
             </motion.div>
 
             <motion.div
@@ -78,10 +103,38 @@ export default function Hero() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 handwritten whitespace-nowrap">
                 Let&apos;s build <ColourfulText text="together" />
               </h2>
-              <p className="text-gray-700 mb-6">
-                I create playful, interactive web experiences with modern technologies. My notebook-style portfolio
-                showcases my projects and skills.
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                If you have an idea <span className="text-yellow-500">💡</span>{" "}
+                or a project you’re passionate about —
+                <span className="font-semibold text-blue-700">
+                  {" "}
+                  I’d love to help you bring it to life.
+                </span>{" "}
+                <br />
+                Whether it’s a{" "}
+                <span className=" ">personal website</span>,
+                a
+                <span className=" ">
+                  tool for your community
+                </span>
+                , or something completely new, I’m here to support you with{" "}
+                <span className="">
+                  full-stack development skills
+                </span>
+                ,
+                <span className="">
+                  creative thinking
+                </span>
+                , and
+                <span className="">
+                  real dedication
+                </span>
+                . <br />
+                Let’s turn your vision into reality —{" "}
+                <span className="font-bold text-pink-600">together 🤝</span>.
               </p>
+
+              <a href="#projects-section">
               <motion.button
                 className="bg-pastel-pink hover:bg-pink-200 text-gray-800 font-semibold py-2 px-6 rounded-md shadow-sm transition-all duration-300 handwritten"
                 whileHover={{ scale: 1.05 }}
@@ -89,6 +142,7 @@ export default function Hero() {
               >
                 View My Work
               </motion.button>
+              </a>
             </motion.div>
           </div>
 
@@ -125,7 +179,9 @@ export default function Hero() {
               transition={{ delay: 0.6, duration: 0.8 }}
             >
               <Card className="p-5 bg-pastel-pink transform rotate-[-1deg] shadow-md">
-                <h3 className="text-xl font-bold mb-3 handwritten">Let&apos;s Connect!</h3>
+                <h3 className="text-xl font-bold mb-3 handwritten">
+                  Let&apos;s Connect!
+                </h3>
 
                 <div className="flex justify-between items-center">
                   <ContactFormModal />
@@ -247,5 +303,5 @@ export default function Hero() {
         </div>
       </motion.div>
     </header>
-  )
+  );
 }
