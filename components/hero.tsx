@@ -155,7 +155,10 @@ export default function Hero() {
             >
               <div className="relative w-full h-[400px] transform rotate-[2deg]">
                 <Image
-                  src="/images/profile.png"
+                  // src="/images/profile.png"
+                  // src="/img/profile/7b.jpg"
+                  // src="/img/profile/3.jpg"
+                  src="/img/profile/10.jpg"
                   alt="Filszu profile"
                   fill
                   className="object-contain rounded-md shadow-lg"
