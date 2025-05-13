@@ -9,7 +9,7 @@ export default function Footer() {
           <span>Made with</span>
           <Heart className="h-4 w-4 mx-1 text-pastel-pink inline fill-pastel-pink" />
           <span>by</span>
-          <span className="font-nunito font-semibold ml-1">filszu</span>
+          <span className="font-nunito font-semibold ml-1"><Link href="/easter-egg/50-shades-of-filszu" className="cursor-zoom-in">filszu</Link></span>
         </div>
 
         <div className="flex items-center space-x-4">
