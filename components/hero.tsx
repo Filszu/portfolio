@@ -158,7 +158,8 @@ export default function Hero() {
                   // src="/images/profile.png"
                   // src="/img/profile/7b.jpg"
                   // src="/img/profile/3.jpg"
-                  src="/img/profile/11.jpg"
+                  // src="/img/profile/11.jpg"
+                  src="/img/profile/10.jpg"
                   alt="Filszu profile"
                   fill
                   className="object-contain rounded-md shadow-lg"
