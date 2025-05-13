@@ -8,7 +8,7 @@ An interactive, notebook-style portfolio website showcasing my projects and skil
 
 ## 🚀 [View Live Demo](https://filszu.vercel.app/)
 
-![Portfolio Preview](public/images/og-image.png)
+![Portfolio Preview](https://filszu.vercel.app/images/og-image.png)
 
 ## ✨ Features
 
