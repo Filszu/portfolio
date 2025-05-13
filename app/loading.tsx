@@ -14,7 +14,7 @@ export default function Loading() {
       >
         <div className="w-64 h-64 mx-auto">
             <DotLottieReact
-              src="https://lottie.host/2f4a3dd8-8b62-41c9-8305-5837004543df/1q3usIpAjV.lottie"
+              src="https://lottie.host/0abf08b6-dd1e-4766-a314-fa9d257b509e/QxdZlYc9TQ.lottie"
               loop
               autoplay
             />

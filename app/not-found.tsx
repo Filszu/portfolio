@@ -19,7 +19,8 @@ export default function NotFound() {
           
           <div className="w-64 h-64 mx-auto">
           <DotLottieReact
-            src="https://lottie.host/0abf08b6-dd1e-4766-a314-fa9d257b509e/QxdZlYc9TQ.lottie"
+            
+            src="https://lottie.host/2f4a3dd8-8b62-41c9-8305-5837004543df/1q3usIpAjV.lottie"
             loop
             autoplay
           />
@@ -34,7 +35,7 @@ export default function NotFound() {
             <p className="handwritten">Let's get you back on track! 📝</p>
           </div>
 
-          <motion.div whileHover={{ scale: 1.05, rotate: 0 }} className="transform rotate-[-1deg] inline-block">
+          <motion.div whileHover={{ scale: 1.05, rotate: 0 }} className="transform inline-block">
             <Button
               asChild
               className="bg-pastel-blue hover:bg-blue-200 text-gray-800 border border-gray-300 shadow-sm handwritten"
