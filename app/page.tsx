@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-white">
       <RegisterSW />
-      <ScrollArea className="h-screen">
+      <ScrollArea className="min-h-screen">
         <Hero />
         <div className="h-20" />
         <main className="container mx-auto px-4 py-8">

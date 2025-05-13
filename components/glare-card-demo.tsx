@@ -11,7 +11,7 @@ export default function GlareCardDemo() {
 
   useEffect(() => {
     // Generate a random number between 1 and 4 for images
-    const randomNum = Math.floor(Math.random() * 4) + 1
+    const randomNum = Math.floor(Math.random() * 11) + 1
     // Generate a random number between 0 and 4 for gradients
     const randomGradientNum = Math.floor(Math.random() * 5)
 
@@ -21,10 +21,21 @@ export default function GlareCardDemo() {
   }, [])
 
   const imageUrls = {
-    1: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1.jpg-CoAk05fkxBJciM7u1iKxBqFgZYbB7U.jpeg",
-    2: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2.jpg-K0sj0fQS6bqVfI9vh41i9OxAQKyfZh.jpeg",
-    3: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3.jpg-6gf0MUIeFIkl7liy8DNRw8ohV2oyGC.jpeg",
-    4: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4.jpg-kkPmi8CTurkzwEQ4neMIZ19c9dRRNb.jpeg",
+    // 1: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1.jpg-CoAk05fkxBJciM7u1iKxBqFgZYbB7U.jpeg",
+    // 2: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2.jpg-K0sj0fQS6bqVfI9vh41i9OxAQKyfZh.jpeg",
+    // 3: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3.jpg-6gf0MUIeFIkl7liy8DNRw8ohV2oyGC.jpeg",
+    // 4: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4.jpg-kkPmi8CTurkzwEQ4neMIZ19c9dRRNb.jpeg",
+    1: "/img/profile/1.jpg",
+    2: "/img/profile/2.jpg",
+    3: "/img/profile/3.jpg",
+    4: "/img/profile/4.jpg",
+    5: "/img/profile/5.jpg",
+    6: "/img/profile/6.jpg",
+    7: "/img/profile/7.jpg",
+    8: "/img/profile/8.jpg",
+    9: "/img/profile/9.jpg",
+    10: "/img/profile/10.jpg",
+    11: "/img/profile/11.jpg",
   }
 
   // Predefined gradient styles
@@ -40,11 +51,11 @@ export default function GlareCardDemo() {
 
   return (
     <GlareCard
-      className={`flex flex-col items-center justify-center p-0 bg-gradient-to-br ${gradients[randomGradient]} w-[400px] h-[500px]`}
+      className={`flex flex-col items-center justify-center p-0 bg-gradient-to-br ${gradients[randomGradient]} w-[400px] h-[500px] cursor-grab`}
     >
       {isLoaded && (
         <>
-          <div className="relative w-full h-full rounded-[var(--radius)] overflow-hidden">
+          <div className="relative w-full h-full rounded-[var(--radius)] overflow-hidden group">
             <Image
               src={imageUrls[randomImage as keyof typeof imageUrls] || "/placeholder.svg"}
               alt="Filip Szumowski"
@@ -52,7 +63,7 @@ export default function GlareCardDemo() {
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+            <div className="absolute inset-0 group-hover:bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6 cursor-move">
               <p className="text-white font-bold text-2xl">{gradientNames[randomGradient]}</p>
               <p className="text-gray-200 text-sm mt-1">Shade #{randomImage} • Hover to see the magic ✨</p>
             </div>
