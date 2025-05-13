@@ -4,9 +4,9 @@
     "title": "PartyVote - Radio Elektron",
     "description": "Interactive web app that allows users to vote for their favorite songs and influence what plays on Radio Elektron.",
     "image": "/images/partyvote-main.png",
-    "tags": ["Next.js", "Supabase", "TypeScript", "Spotify API", "Stripe"],
+    "tags": ["Next.js", "Supabase", "Stripe","TypeScript", "Spotify API" ],
     "demoUrl": "https://partyvote.ciac.me",
-    "githubUrl": "https://github.com/filszu/partyvote",
+    "githubUrl": "https://github.com/Filszu/radio",
     "featured": true
   },
   {
@@ -16,7 +16,7 @@
     "image": "/images/osir-bunkier-hero.png",
     "tags": ["Next.js", "TypeScript", "CSS3", "Responsive Design"],
     "demoUrl": "https://www.bunkier.zgora.pl/",
-    "githubUrl": "https://github.com/filszu/bunkier-website",
+    "githubUrl": "https://bunkier.vercel.app/",
     "featured": true
   },
   {
@@ -44,7 +44,7 @@
     "title": "FilszuLessons",
     "description": "My personal tutoring website for programming—learn to code with passion and years of experience!",
     "image": "/images/filszu-lessons-home.png",
-    "tags": ["Next.js", "TypeScript", "Educational Platform"],
+    "tags": ["Responsive Design","Vite", "Educational Platform"],
     "demoUrl": "https://lessons.ciac.me/",
     "githubUrl": "https://github.com/Filszu/filszuLessons",
     "featured": false

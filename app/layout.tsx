@@ -3,6 +3,7 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { Inter, Nunito } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
+import Footer from "@/components/footer"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const nunito = Nunito({
@@ -27,14 +28,14 @@ export const metadata: Metadata = {
   creator: "Filip Szumowski",
   publisher: "Filip Szumowski",
   robots: "index, follow",
-  metadataBase: new URL("https://filszu-portfolio.vercel.app"),
+  metadataBase: new URL("https://filszu.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Filip Szumowski | Full-Stack Web Developer",
     description: "Interactive notebook-style portfolio showcasing my projects and skills in web development",
-    url: "https://filszu-portfolio.vercel.app",
+    url: "https://filszu.vercel.app",
     siteName: "Filip Szumowski Portfolio",
     images: [
       {
@@ -53,7 +54,13 @@ export const metadata: Metadata = {
     description: "Interactive notebook-style portfolio showcasing my projects and skills in web development",
     images: ["/images/og-image.jpeg"],
   },
-    generator: 'v0.dev'
+  manifest: "/manifest.json",
+  themeColor: "#FFD6E0", // Pastel pink theme color
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Filip Szumowski Portfolio",
+  },
 }
 
 export default function RootLayout({
@@ -65,11 +72,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#FFD6E0" />
+        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
       </head>
       <body className={`${inter.variable} ${nunito.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

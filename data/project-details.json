@@ -3,20 +3,23 @@
     "id": 1,
     "slug": "partyvote-radio-elektron",
     "title": "PartyVote - Radio Elektron",
-    "description": "Interactive web app that allows users to vote for their favorite songs and influence what plays on Radio Elektron.",
+    "description": "Interactive web app that allows users to vote for their favorite songs and influence what plays on thier house parties or even radio stations.",
     "longDescription": "PartyVote is an interactive web application that allows users to vote for their favorite songs and influence what plays on Radio Elektron. The app creates an engaging experience for radio listeners and event attendees by giving them control over the music playlist.\n\nThe application features real-time voting, playlist management, and integration with popular music services like Spotify and YouTube Music. It includes an admin panel for hosts to manage songs, configure party settings, and access developer tools. The platform also offers premium features through Stripe payment integration.",
     "mainImage": "/images/partyvote-main.png",
     "tags": [
       "Next.js",
       "Supabase",
       "TypeScript",
-      "Google Cloud Platform",
+      "Google API / Cloud Platform",
       "Stripe",
       "Spotify API",
-      "PostgreSQL"
+      "YouTube API",
+      "PostgreSQL",
+      "REACT.js",
+      "API"
     ],
     "demoUrl": "https://partyvote.ciac.me",
-    "githubUrl": "https://github.com/filszu/partyvote",
+    "githubUrl": "https://github.com/Filszu/radio",
     "featured": true,
     "screenshots": [
       {
@@ -60,6 +63,7 @@
       "Next.js",
       "TypeScript",
       "CSS3",
+      "REACT.js",
       "Responsive Design",
       "Commercial Project"
     ],
@@ -148,7 +152,10 @@
       "React Three Fiber",
       "ApexCharts",
       "TanStack Table",
-      "Framer Motion"
+      "Framer Motion",
+      "Google API / Cloud Platform",
+      "TypeScript"
+      
     ],
     "demoUrl": "https://leadloom.games/",
     "githubUrl": "https://github.com/filszu/leadloom",
@@ -181,11 +188,11 @@
     "longDescription": "FilszuLessons is my personal tutoring site, created to share my passion for teaching programming and web development. I’ve been offering private tutoring for several years, helping students of all levels understand how to code—from complete beginners to aspiring professionals.\n\nThe website is designed to be friendly, modern, and clear, using an energetic yellow and dark blue color scheme that makes learning enjoyable. You’ll find structured lessons covering HTML, CSS, JavaScript, PHP, and Python. Each course progresses from fundamentals to advanced topics.\n\nAs both the developer and the tutor behind FilszuLessons, I’ve tailored the content to adapt to different learning styles. There are interactive examples, real coding challenges, and personalized feedback. If you're serious about learning programming and want real support from someone who truly enjoys teaching—get in touch with me!",
     "mainImage": "/images/filszu-lessons-home.png",
     "tags": [
-      "Next.js",
-      "TypeScript",
+      "Vite",
       "Educational Platform",
       "Interactive Learning",
-      "Web Development"
+      "Web Development",
+      "Responsive Design"
     ],
     "demoUrl": "https://lessons.ciac.me/",
     "githubUrl": "https://github.com/Filszu/filszuLessons",
@@ -209,7 +216,7 @@
     "longDescription": "Boxing Timer Pro is the perfect tool to help you track your boxing rounds, rest periods, and workouts. Ideal for training sessions and fitness routines, this app provides a professional experience for boxers and fitness enthusiasts alike.\n\nThe application features a clean, intuitive interface with both dark and light themes. The main timer display shows the current round, time remaining, and workout phase (work or rest period). Users can customize round duration, rest periods, number of rounds, and countdown warnings to suit their specific training needs.\n\nAdditional features include training progress tracking with visual charts showing total work time and number of rounds over time, a training history log to review past sessions, and fullscreen mode for better visibility during workouts. The app is fully responsive and works seamlessly on both desktop and mobile devices.",
     "mainImage": "/images/boxing-timer-dark.png",
     "tags": [
-      "Next.js",
+      "Vite",
       "TypeScript",
       "Chart.js",
       "Responsive Design",
@@ -247,7 +254,9 @@
       "Drizzle ORM",
       "Historical Content",
       "Responsive Design",
-      "Content Management"
+      "Content Management",
+      "TypeScript",
+      "Tailwind CSS"
     ],
     "demoUrl": "https://ww2machines.vercel.app/",
     "githubUrl": "https://github.com/Filszu/ww2blog-nextjs-drizzle-orm",
@@ -276,7 +285,8 @@
       "Tailwind CSS",
       "Framer Motion",
       "Image Processing",
-      "Drag-and-Drop"
+      "TypeScript",
+      "Responsive Design"
     ],
     "demoUrl": "https://card-studio.vercel.app/",
     "githubUrl": "https://github.com/Filszu/card-studio-Create-Custom-Poker-Cards-With-Your-Images",
