@@ -38,13 +38,6 @@ An interactive, notebook-style portfolio website showcasing my projects and skil
 - `public/` - Static assets like images and icons
 - `lib/` - Utility functions and helpers
 
-## 📋 Projects Featured
-
-- PartyVote - Interactive music voting system
-- OSIR Bunkier - Commercial website for a recreation center
-- Kaizen Steps - Habit tracking application
-- Boxing Timer - Professional boxing training timer
-- And many more!
 
 ## 🚀 Getting Started
 
@@ -81,9 +74,6 @@ An interactive, notebook-style portfolio website showcasing my projects and skil
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Filszu/portfolio/issues).
 
-## 📝 License
-
-This project is [MIT](LICENSE) licensed.
 
 ## 👨‍💻 Author
 

@@ -1,5 +1,5 @@
-import { Github, Heart } from "lucide-react"
-import Link from "next/link"
+import { Github, Heart } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -9,7 +9,14 @@ export default function Footer() {
           <span>Made with</span>
           <Heart className="h-4 w-4 mx-1 text-pastel-pink inline fill-pastel-pink" />
           <span>by</span>
-          <span className="font-nunito font-semibold ml-1"><Link href="/easter-egg/50-shades-of-filszu" className="cursor-zoom-in">filszu</Link></span>
+          <span className="font-nunito font-semibold ml-1">
+            <Link
+              href="/easter-egg/50-shades-of-filszu"
+              className="cursor-zoom-in"
+            >
+              filszu
+            </Link>
+          </span>
         </div>
 
         <div className="flex items-center space-x-4">
@@ -20,7 +27,7 @@ export default function Footer() {
             className="flex items-center text-sm text-gray-600 hover:text-gray-900 transition-colors"
           >
             <Github className="h-4 w-4 mr-1" />
-            <span>Leave a star on GitHub</span>
+            <span>Leave a star ⭐ on GitHub</span>
           </Link>
 
           <span className="text-sm text-gray-400">|</span>
@@ -34,5 +41,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
