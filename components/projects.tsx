@@ -46,10 +46,9 @@ export default function Projects() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 } // Trigger when 10% of the element is visible
+      { threshold: 0.1 } 
     );
 
-    // Get the section element
     const section = document.getElementById("projects-section");
     if (section) {
       observer.observe(section);
@@ -232,7 +231,7 @@ export default function Projects() {
               }}
               className="transform rotate-[-1deg]"
             >
-              <Card className="overflow-hidden h-full border-2 border-gray-200 shadow-md hover:shadow-lg transition-shadow rounded-xl">
+              <Card className="overflow-hidden h-full border-2 border-gray-200 shadow-md hover:shadow-lg transition-shadow rounded-xl opacity-90 hover:opacity-100">
                 <div className="cursor-pointer">
                   <Link href={`/projects/${project.slug}`} className="block">
                     <div className="relative w-full aspect-video">

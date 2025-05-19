@@ -111,37 +111,25 @@ export default function Hero() {
                   I’d love to help you bring it to life.
                 </span>{" "}
                 <br />
-                Whether it’s a{" "}
-                <span className=" ">personal website</span>,
-                a
-                <span className=" ">
-                  tool for your community
-                </span>
-                , or something completely new, I’m here to support you with{" "}
-                <span className="">
-                  full-stack development skills
-                </span>
-                ,
-                <span className="">
-                  creative thinking
-                </span>
-                , and
-                <span className="">
-                  real dedication
-                </span>
+                Whether it’s a <span className=" ">personal website</span>, a
+                <span className=" ">tool for your community</span>, or something
+                completely new, I’m here to support you with{" "}
+                <span className="">full-stack development skills</span>,
+                <span className="">creative thinking</span>, and
+                <span className="">real dedication</span>
                 . <br />
                 Let’s turn your vision into reality —{" "}
                 <span className="font-bold text-pink-600">together 🤝</span>.
               </p>
 
               <a href="#projects-section">
-              <motion.button
-                className="bg-pastel-pink hover:bg-pink-200 text-gray-800 font-semibold py-2 px-6 rounded-md shadow-sm transition-all duration-300 handwritten"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                View My Work
-              </motion.button>
+                <motion.button
+                  className="bg-pastel-pink hover:bg-pink-200 text-gray-800 font-semibold py-2 px-6 rounded-md shadow-sm transition-all duration-300 handwritten"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  View My Work
+                </motion.button>
               </a>
             </motion.div>
           </div>
@@ -182,15 +170,16 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
             >
-              <Card className="mt-10 p-5 bg-pastel-pink transform rotate-[-1deg] shadow-md">
+              <Card className="mt-10 p-5 bg-pastel-pink transform rotate-[-1deg] shadow-md text-center md:text-left">
                 <h3 className="text-xl font-bold mb-3 handwritten">
                   Let&apos;s Connect!
                 </h3>
 
-                <div className="flex justify-between items-center">
-                  <ContactFormModal />
-
-                  <div className="flex space-x-3">
+                <div className="flex  justify-center md:justify-between items-center  flex-wrap-reverse gap-4 md:flex-row ">
+                  <div className=" justify-center">
+                    <ContactFormModal />
+                  </div>
+                  <div className="flex space-x-3 justify-center ">
                     <motion.a
                       href="https://www.instagram.com/filip_kyokushin/"
                       target="_blank"

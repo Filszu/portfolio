@@ -280,7 +280,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
                 className="bg-pastel-blue hover:bg-blue-200 text-gray-800 border border-gray-300 shadow-sm handwritten"
                 asChild
               >
-                <Link href="/contact">
+                <Link href="/?utm_source=contact" >
                   <ExternalLink className="mr-2 h-4 w-4" />
                   Contact Me
                 </Link>
