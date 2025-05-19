@@ -142,15 +142,26 @@ export default function Hero() {
               transition={{ delay: 0.3, duration: 0.8 }}
             >
               <div className="relative w-full h-[400px] transform rotate-[2deg]">
+                {/* Large screens: show 10.jpg */}
                 <Image
-                  // src="/images/profile.png"
-                  // src="/img/profile/7b.jpg"
-                  // src="/img/profile/3.jpg"
-                  // src="/img/profile/11.jpg"
                   src="/img/profile/10.jpg"
                   alt="Filszu profile"
                   fill
-                  className="object-contain rounded-md shadow-lg"
+                  className="object-contain rounded-md hidden lg:block"
+                />
+                {/* Medium screens: show 12e.png */}
+                <Image
+                  src="/img/profile/12e.png"
+                  alt="Filszu profile"
+                  fill
+                  className="object-contain rounded-md hidden md:block lg:hidden"
+                />
+                {/* Small screens: show 10.jpg */}
+                <Image
+                  src="/img/profile/12.jpg"
+                  alt="Filszu profile"
+                  fill
+                  className="object-contain rounded-md block md:hidden"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-pastel-green p-3 rounded-md shadow-md transform rotate-[-3deg] handwritten">
                   That&apos;s me!

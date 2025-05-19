@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "slug": "partyvote-radio-elektron",
-    "title": "PartyVote - Radio Elektron",
+    "slug": "partyvote",
+    "title": "PartyVote",
     "description": "Interactive web app that allows users to vote for their favorite songs and influence what plays on thier house parties or even radio stations.",
-    "longDescription": "PartyVote is an interactive web application that allows users to vote for their favorite songs and influence what plays on Radio Elektron. The app creates an engaging experience for radio listeners and event attendees by giving them control over the music playlist.\n\nThe application features real-time voting, playlist management, and integration with popular music services like Spotify and YouTube Music. It includes an admin panel for hosts to manage songs, configure party settings, and access developer tools. The platform also offers premium features through Stripe payment integration.",
+    "longDescription": "PartyVote is an interactive web application that allows users to vote for their favorite songs and influence what plays on your party. The app creates an engaging experience for radio listeners and event attendees by giving them control over the music playlist.\n\nThe application features real-time voting, playlist management, and integration with popular music services like Spotify and YouTube Music. It includes an admin panel for hosts to manage songs, configure party settings, and access developer tools. The platform also offers premium features through Stripe payment integration.",
     "mainImage": "/images/partyvote-main.png",
     "tags": [
       "Next.js",
       "Supabase",
+      "Stripe",
       "TypeScript",
       "Google API / Cloud Platform",
-      "Stripe",
       "Spotify API",
       "YouTube API",
       "PostgreSQL",
@@ -102,7 +102,8 @@
       "Tailwind CSS",
       "Pomodoro Timer",
       "Chart.js",
-      "Responsive Design"
+      "Responsive Design",
+      "REACT.js"
     ],
     "demoUrl": "https://kaizensteps.vercel.app",
     "githubUrl": "https://github.com/Filszu/habit-tracker",
@@ -154,7 +155,8 @@
       "TanStack Table",
       "Framer Motion",
       "Google API / Cloud Platform",
-      "TypeScript"
+      "TypeScript",
+      "REACT.js"
       
     ],
     "demoUrl": "https://leadloom.games/",
@@ -192,7 +194,8 @@
       "Educational Platform",
       "Interactive Learning",
       "Web Development",
-      "Responsive Design"
+      "Responsive Design",
+      "REACT.js"
     ],
     "demoUrl": "https://lessons.ciac.me/",
     "githubUrl": "https://github.com/Filszu/filszuLessons",
@@ -221,7 +224,8 @@
       "Chart.js",
       "Responsive Design",
       "PWA",
-      "Tailwind CSS"
+      "Tailwind CSS",
+      "REACT.js"
     ],
     "demoUrl": "https://boxing-timer.ciac.me/",
     "githubUrl": "https://github.com/Filszu/boxing-timer",
@@ -256,7 +260,8 @@
       "Responsive Design",
       "Content Management",
       "TypeScript",
-      "Tailwind CSS"
+      "Tailwind CSS",
+      "REACT.js"
     ],
     "demoUrl": "https://ww2machines.vercel.app/",
     "githubUrl": "https://github.com/Filszu/ww2blog-nextjs-drizzle-orm",
@@ -281,7 +286,7 @@
     "mainImage": "/images/card-studio-home.png",
     "tags": [
       "Next.js",
-      "React",
+      "REACT.js",
       "Tailwind CSS",
       "Framer Motion",
       "Image Processing",
