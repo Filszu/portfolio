@@ -3,12 +3,13 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Github, Instagram, Linkedin } from "lucide-react";
+import { Github, Instagram, Linkedin, MessageCircle } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import ColourfulText from "@/components/ui/colourful-text";
 import ContactFormModal from "@/components/contact-form-modal";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -187,8 +188,17 @@ export default function Hero() {
                 </h3>
 
                 <div className="flex  justify-center md:justify-between items-center  flex-wrap-reverse gap-4 md:flex-row ">
-                  <div className=" justify-center">
+                  <div className=" justify-center hidden md:block">
                     <ContactFormModal />
+                  </div>
+
+                  <div className=" justify-center md:hidden block">
+                    <Link href="mailto:filipszumowski05@gmail.com">
+                      <Button className="" variant={"outline"}>
+                        <MessageCircle className="mr-2 h-5 w-5" />
+                        Let&apos;s Chat
+                      </Button>
+                    </Link>
                   </div>
                   <div className="flex space-x-3 justify-center ">
                     <motion.a

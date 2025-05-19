@@ -67,24 +67,7 @@ export default function ContactFormModal() {
 
       <ModalBody className="bg-transparent border-none">
         <div className="relative w-full h-full overflow-hidden">
-          {/* Decorative elements */}
-          <motion.div
-            className="absolute -right-10 -top-10 z-0 opacity-30 hidden md:block"
-            initial={{ opacity: 0, rotate: -10 }}
-            animate={{ opacity: 0.3, rotate: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <Image src="/images/coding.png" alt="Decorative illustration" width={200} height={200} />
-          </motion.div>
-
-          <motion.div
-            className="absolute -left-10 bottom-10 z-0 opacity-30 hidden md:block"
-            initial={{ opacity: 0, rotate: 10 }}
-            animate={{ opacity: 0.3, rotate: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <Image src="/images/penguins.png" alt="Decorative illustration" width={200} height={200} />
-          </motion.div>
+          
 
           <ModalContent className="notebook-paper p-0 border-2 border-gray-300 shadow-lg transform rotate-[-1deg] h-full md:h-auto overflow-auto">
             <div className="bg-pastel-yellow p-6 transform rotate-[1deg] -mt-4 -ml-4 shadow-md">
