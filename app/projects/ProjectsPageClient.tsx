@@ -175,10 +175,18 @@ export default function ProjectsPageClient() {
                       className="bg-pastel-green hover:bg-green-200 text-gray-800"
                       asChild
                     >
-                      <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                        <Link
+                        href={
+                          project.demoUrl
+                          ? `${project.demoUrl}${project.demoUrl.includes('?') ? '&' : '?'}utm_source=filszu_portfolio`
+                          : ""
+                        }
+                        target="_blank"
+                        // rel="noopener noreferrer"
+                        >
                         <Play className="mr-2 h-4 w-4" />
                         Demo
-                      </a>
+                        </Link>
                     </Button>
                   </div>
 

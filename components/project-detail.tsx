@@ -169,10 +169,12 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
                     className="bg-pastel-green hover:bg-green-200 text-gray-800 border border-gray-300 shadow-sm w-full"
                     asChild
                   >
-                    <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                    <Link href={project.demoUrl
+                          ? `${project.demoUrl}${project.demoUrl.includes('?') ? '&' : '?'}utm_source=filszu_portfolio`
+                          : ""} target="_blank" rel="noopener noreferrer">
                       <Play className="mr-2 h-4 w-4" />
                       Live Demo
-                    </a>
+                    </Link>
                   </Button>
 
                   <Button

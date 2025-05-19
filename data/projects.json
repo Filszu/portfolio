@@ -65,7 +65,7 @@
     "description": "Web application for creating custom poker cards with your own images, multiple templates, and export options.",
     "image": "/images/card-studio-home.png",
     "tags": ["Next.js", "React", "Tailwind CSS", "Image Processing"],
-    "demoUrl": "https://card-studio.vercel.app/",
+    "demoUrl": "https://card-deck-generator.vercel.app/",
     "githubUrl": "https://github.com/Filszu/card-studio-Create-Custom-Poker-Cards-With-Your-Images",
     "featured": false
   },
@@ -75,7 +75,7 @@
     "description": "Gamified lead generation platform that rewards users for playing games and completing challenges.",
     "image": "/images/leadloom-hero.png",
     "tags": ["Next.js", "Supabase", "Three.js", "React Three Fiber", "ApexCharts"],
-    "demoUrl": "https://LEADLOOM.games.example.com",
+    "demoUrl": "https://LEADLOOM.games",
     "githubUrl": "https://github.com/filszu/LEADLOOM.games",
     "featured": false
   }

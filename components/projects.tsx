@@ -184,7 +184,9 @@ export default function Projects() {
                       asChild
                     >
                       <a
-                        href={project.demoUrl}
+                        href={project.demoUrl
+                          ? `${project.demoUrl}${project.demoUrl.includes('?') ? '&' : '?'}utm_source=filszu_portfolio`
+                          : ""}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
