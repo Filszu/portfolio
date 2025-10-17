@@ -15,7 +15,7 @@
     "description": "Commercial website for a military-themed recreation center offering survival camps, paintball, and team-building activities.",
     "image": "/images/osir-bunkier-hero.png",
     "tags": ["Next.js", "TypeScript", "CSS3", "Responsive Design"],
-    "demoUrl": "https://www.bunkier.zgora.pl/",
+    "demoUrl": "https://bunkier.vercel.app/",
     "githubUrl": "https://bunkier.vercel.app/",
     "featured": true
   },

@@ -29,7 +29,7 @@ const careerSteps: CareerStep[] = [
   },
    {
     id: 3,
-    year: "2020",
+    year: "2020-2025",
     title: "Education - programming technician",
     description: "Started studying at CKZiU Elektronik as a technician in computer science.",
     color: "bg-pastel-pink",
@@ -61,6 +61,13 @@ const careerSteps: CareerStep[] = [
     title: "Advanced Projects & Specialization",
     description: "Fullfilling my passion of crating proceess and created my own projects.",
     color: "bg-pastel-purple",
+  },
+  {
+    id: 8,
+    year: "2025-now",
+    title: "Higher Education on AGH",
+    description: "I started my studies at the Faculty of Industrial Digitalization in Krakow at the AGH University of Science and Technology.",
+    color: "bg-pastel-yellow",
   },
 ]
 
