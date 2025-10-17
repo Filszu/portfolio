@@ -70,6 +70,7 @@ export default function TechStack() {
               rotate: 0,
               transition: { type: "spring", stiffness: 400 },
             }}
+            className="z-10"
           >
             <Card
               className={`${tech.color} p-4 h-full flex flex-col items-center justify-center text-center shadow-md hover:shadow-lg transition-shadow`}
