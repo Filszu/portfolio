@@ -1,24 +1,24 @@
-"use client"
+"use client";
 
-import { GlareCard } from "@/components/ui/glare-card"
-import Image from "next/image"
-import { useEffect, useState } from "react"
+import { GlareCard } from "@/components/ui/glare-card";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function GlareCardDemo() {
-  const [randomImage, setRandomImage] = useState<number>(1)
-  const [randomGradient, setRandomGradient] = useState<number>(0)
-  const [isLoaded, setIsLoaded] = useState(false)
+  const [randomImage, setRandomImage] = useState<number>(1);
+  const [randomGradient, setRandomGradient] = useState<number>(0);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     // Generate a random number between 1 and 4 for images
-    const randomNum = Math.floor(Math.random() * 11) + 1
+    const randomNum = Math.floor(Math.random() * 16) + 1;
     // Generate a random number between 0 and 4 for gradients
-    const randomGradientNum = Math.floor(Math.random() * 5)
+    const randomGradientNum = Math.floor(Math.random() * 9) + 1;
 
-    setRandomImage(randomNum)
-    setRandomGradient(randomGradientNum)
-    setIsLoaded(true)
-  }, [])
+    setRandomImage(randomNum);
+    setRandomGradient(randomGradientNum);
+    setIsLoaded(true);
+  }, []);
 
   const imageUrls = {
     // 1: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1.jpg-CoAk05fkxBJciM7u1iKxBqFgZYbB7U.jpeg",
@@ -36,7 +36,12 @@ export default function GlareCardDemo() {
     9: "/img/profile/9.jpg",
     10: "/img/profile/10.jpg",
     11: "/img/profile/11.jpg",
-  }
+    12: "/img/profile/Filip1.JPG",
+    13: "/img/profile/Filip2.jpeg",
+    14: "/img/profile/Filip4.JPG",
+    15: "/img/profile/Filip_rave.PNG",
+    16: "/img/profile/Filip1.JPG",
+  };
 
   // Predefined gradient styles
   const gradients = [
@@ -45,9 +50,25 @@ export default function GlareCardDemo() {
     "from-purple-500 to-pink-300", // Purple/Pink
     "from-emerald-500 to-teal-300", // Green
     "from-rose-500 to-orange-300", // Sunset
-  ]
+    "from-indigo-500 to-purple-300", // Indigo
+    "from-green-500 to-lime-300", // Morning
+    "from-cyan-500 to-blue-300", // Aurora
+    "from-pink-500 to-red-300", // Blush
+    "from-sapphire-500 to-blue-300", // Sapphire  
+  ];
 
-  const gradientNames = ["Golden Filszu", "Ocean Filszu", "Cosmic Filszu", "Emerald Filszu", "Sunset Filszu"]
+  const gradientNames = [
+    "Golden Filszu",
+    "Ocean Filszu",
+    "Cosmic Filszu",
+    "Emerald Filszu",
+    "Sunset Filszu",
+    "Midnight Filszu",
+    "Morning Filszu",
+    "Aurora Filszu",
+    "Blush Filszu",
+    "Sapphire Filszu",
+  ];
 
   return (
     <GlareCard
@@ -57,19 +78,26 @@ export default function GlareCardDemo() {
         <>
           <div className="relative w-full h-full rounded-[var(--radius)] overflow-hidden group">
             <Image
-              src={imageUrls[randomImage as keyof typeof imageUrls] || "/placeholder.svg"}
+              src={
+                imageUrls[randomImage as keyof typeof imageUrls] ||
+                "/placeholder.svg"
+              }
               alt="Filip Szumowski"
               fill
               className="object-cover"
               priority
             />
             <div className="absolute inset-0 group-hover:bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6 cursor-move">
-              <p className="text-white font-bold text-2xl">{gradientNames[randomGradient]}</p>
-              <p className="text-gray-200 text-sm mt-1">Shade #{randomImage} • Hover to see the magic ✨</p>
+              <p className="text-white font-bold text-2xl">
+                {gradientNames[randomGradient]}
+              </p>
+              <p className="text-gray-200 text-sm mt-1">
+                Shade #{randomImage} • Hover to see the magic ✨
+              </p>
             </div>
           </div>
         </>
       )}
     </GlareCard>
-  )
+  );
 }

@@ -152,14 +152,14 @@ export default function Hero() {
                 />
                 {/* Medium screens: show 12e.png */}
                 <Image
-                  src="/img/profile/12e.png"
+                  src="/img/profile/Filip1.JPG"
                   alt="Filszu profile"
                   fill
                   className="object-contain rounded-md hidden md:block lg:hidden"
                 />
                 {/* Small screens: show 10.jpg */}
                 <Image
-                  src="/img/profile/12.jpg"
+                  src="/img/profile/Filip2.jpeg"
                   alt="Filszu profile"
                   fill
                   className="object-contain rounded-md block md:hidden"

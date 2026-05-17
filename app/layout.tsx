@@ -15,7 +15,7 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: "Filip Szumowski | Full-Stack Web Developer",
   description:
-    "Filszu's Interactive notebook-style portfolio, a full-stack web developer specializing in React, Next.js, and modern web technologies.",
+    "I'm Filip Szumowski, a full-stack web developer who builds accessible, responsive, and performant web applications using modern web technologies. I enjoy crafting clean user experiences, optimizing for performance. - Filszu's Interactive notebook-style portfolio, a full-stack web developer specializing in React, Next.js, and modern web technologies.",
   keywords: [
     "Filip Szumowski",
     "Web Developer",
