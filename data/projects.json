@@ -78,5 +78,20 @@
     "demoUrl": "https://LEADLOOM.games",
     "githubUrl": "https://github.com/filszu/LEADLOOM.games",
     "featured": false
+  },
+  {
+    "id": 9,
+    "title": "StudyFlow",
+    "description": "Smart study planner application leveraging spaced repetition algorithms to optimize learning and memory retention.",
+    "image": "/images/study_flow1.png",
+    "tags": [
+      "Next.js", 
+      "TypeScript", 
+      "Tailwind CSS", 
+      "Spaced Repetition"
+    ],
+    "demoUrl": "https://studieflow.vercel.app/",
+    "githubUrl": "https://github.com/Filszu/StudyFlow",
+    "featured": false
   }
 ]

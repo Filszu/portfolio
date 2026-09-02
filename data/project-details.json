@@ -310,5 +310,38 @@
         "description": "Image upload interface with card preview and deck management"
       }
     ]
+  },
+  {
+    "id": 9,
+    "slug": "studyflow",
+    "title": "StudyFlow",
+    "description": "Smart study planner application leveraging spaced repetition algorithms to optimize learning and memory retention.",
+    "longDescription": "StudyFlow is a smart study planner and educational platform designed to help students optimize their learning process. By leveraging spaced repetition algorithms, the application ensures that study materials are reviewed at the optimal time for maximum memory retention, similar to customized flashcard decks.\n\nUsers can create custom study materials, track their learning progress through detailed statistics, and manage their daily study sessions efficiently. The platform features an intuitive interface that makes organizing knowledge and tracking long-term progress simple and effective.\n\nBuilt to provide a seamless experience, StudyFlow helps learners achieve their academic goals through scientifically proven study methods.",
+    "mainImage": "/images/studyflow-main.png",
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Spaced Repetition",
+      "REACT.js",
+      "Educational Platform"
+    ],
+    "demoUrl": "https://studieflow.vercel.app/",
+    "githubUrl": "https://github.com/Filszu/StudyFlow",
+    "featured": false,
+    "screenshots": [
+      {
+        "image": "/images/study_flow1.png",
+        "description": "Dashboard showing study progress and upcoming reviews"
+      },
+      {
+        "image": "/images/study_flow2.png",
+        "description": "Study deck management and creation interface"
+      },
+      {
+        "image": "/images/study_flow3.png",
+        "description": "settings"
+      }
+    ]
   }
 ]
