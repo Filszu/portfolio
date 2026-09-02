@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { MessageCircle, Send } from "lucide-react"
-import Image from "next/image"
 
 export default function ContactFormModal() {
   const [formState, setFormState] = useState({
@@ -20,6 +19,7 @@ export default function ContactFormModal() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitSuccess, setSubmitSuccess] = useState(false)
+  const [submitError, setSubmitError] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormState({
@@ -28,21 +28,27 @@ export default function ContactFormModal() {
     })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitError(false)
 
-    // Create mailto link with form data
-    const subject = encodeURIComponent("Cooperation")
-    const body = encodeURIComponent(
-      `Name: ${formState.name}\nEmail: ${formState.email}\n\nMessage:\n${formState.message}`,
-    )
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formState.name,
+          email: formState.email,
+          title: formState.subject,
+          content: formState.message,
+        }),
+      })
 
-    // Open email client with pre-filled data
-    window.location.href = `mailto:filipszumowski05@gmail.com?subject=${subject}&body=${body}`
+      if (!response.ok) {
+        throw new Error(`Contact request failed with status ${response.status}`)
+      }
 
-    // Show success message and reset form after a delay
-    setTimeout(() => {
       setIsSubmitting(false)
       setSubmitSuccess(true)
 
@@ -50,7 +56,10 @@ export default function ContactFormModal() {
         setSubmitSuccess(false)
         setFormState({ name: "", email: "", subject: "", message: "" })
       }, 3000)
-    }, 1000)
+    } catch {
+      setIsSubmitting(false)
+      setSubmitError(true)
+    }
   }
 
   return (
@@ -173,6 +182,7 @@ export default function ContactFormModal() {
                   </motion.div> */}
 
                   <div className="flex gap-4 justify-center items-center">
+                    {submitError && <p className="text-sm text-red-600">Unable to send your message. Please try again.</p>}
                     <Button
                       type="submit"
                       className="bg-pastel-blue hover:bg-blue-200 text-gray-800 border border-gray-300 shadow-sm handwritten"
